@@ -24,8 +24,8 @@ body {
 .navbar-nav .nav-link:hover {
   text-decoration-line: underline;
   text-decoration-color: red;
-  text-decoration-thickness: 2px;
-  text-underline-offset: 4px; /* how far is the red line below the letters */
+  text-decoration-thickness: 1px;
+  text-underline-offset: 10px; /* how far is the red line below the letters */
 }
 
 .navbar a {
@@ -37,8 +37,8 @@ body {
 .navbar-nav .nav-link.active {
   text-decoration-line: underline;
   text-decoration-color: red;
-  text-decoration-thickness: 2px;
-  text-underline-offset: 4px; /* how far is the red line below the letters */
+  text-decoration-thickness: 1px;
+  text-underline-offset: 10px; /* how far is the red line below the letters */
 }
 
 
