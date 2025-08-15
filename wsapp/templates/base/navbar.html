@@ -1,6 +1,8 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<nav class="navbar navbar-expand-lg data-bs-theme='light' bg-light">
   <div class="container-fluid">
-    <a class="navbar-brand" href="/">MyBlog</a>
+    <a class="navbar-brand" href="/">
+      <img src="{{ url_for('static', filename='images/favicons/favicon.ico') }}" alt="George" width="32" height="32">
+    </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
       aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -8,13 +10,13 @@
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link" aria-current="page" href="/pages/index">Αρχική Σελίδα</a>
+          <a class="nav-link" aria-current="page" href="/pages/private.html">Ιδιώτες</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/pages/corporate">Corporate</a>
+          <a class="nav-link" href="/pages/corporate.html">Επιχειρίσεις</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/new_article/">Νέο Άρθρο</a>
+          <a class="nav-link" href="/pages/useful_links.html">Χρήσιμοι Σύνδεσμοι</a>
         </li>
       </ul>
       <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
