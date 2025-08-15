@@ -26,5 +26,9 @@ def corporate():
 def useful_links():
     return render_template('pages/useful_links.html')
 
+@main.route('/pages/contact')
+@main.route('/pages/contact.html')
+def contact():
+    return render_template('pages/contact.html')
 
 
