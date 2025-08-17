@@ -1,69 +1,58 @@
 <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
-  <div class="container-fluid d-flex align-items-center">
+  <div class="container-fluid">
 
     <!-- Logo -->
-    <a class="navbar-brand" href="/">
+    <a class="navbar-brand" href="{{ url_for('main.index') }}">
       <img src="{{ url_for('static', filename='images/favicons/favicon.ico') }}" 
            alt="George" width="32" height="32">
     </a>
 
+    <!-- Language toggle (outside collapse) -->
+    <a class="nav-link d-md-none" 
+       href="{{ url_for('main.set_language', lang='en' if session.get('lang','el')=='el' else 'el') }}">
+      {% if session.get('lang','el') == 'el' %}
+        <img src="{{ url_for('static', filename='images/flags/4x3/us.svg') }}" width="28" height="21" alt="US">
+        EN
+      {% else %}
+        <img src="{{ url_for('static', filename='images/flags/4x3/gr.svg') }}" width="28" height="21" alt="GR">
+        GR
+      {% endif %}
+    </a>
+
     <!-- Hamburger -->
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
-      data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" 
-      aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <!-- Navbar links -->
-<div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-  <ul class="navbar-nav">
-    <li class="nav-item px-2">
-      <a class="nav-link {% if request.path == '/pages/about_me.html' %}active{% endif %}"
-         href="/pages/about_me.html">{{ t['about_me'] }}</a>
-    </li>
-    <li class="nav-item px-2">
-      <a class="nav-link {% if request.path == '/pages/private.html' %}active{% endif %}"
-         href="/pages/private.html">{{ t['private'] }}</a>
-    </li>
-    <li class="nav-item px-2">
-      <a class="nav-link {% if request.path == '/pages/corporate.html' %}active{% endif %}"
-         href="/pages/corporate.html">{{ t['corporate'] }}</a>
-    </li>
-    <li class="nav-item px-2">
-      <a class="nav-link {% if request.path == '/pages/useful_links.html' %}active{% endif %}"
-         href="/pages/useful_links.html">{{ t['useful_links'] }}</a>
-    </li>
-    <li class="nav-item px-2">
-      <a class="nav-link {% if request.path == '/pages/contact.html' %}active{% endif %}"
-         href="/pages/contact.html">{{ t['contact'] }}</a>
-    </li>
-    <li class="nav-item px-2">
-      <a class="nav-link {% if request.path == '/pages/newpage.html' %}active{% endif %}"
-         href="/pages/newpage.html">{{ t['new_page'] }}</a>
-    </li>
-  </ul>
-</div>
+<!-- Hamburger -->
+<button class="navbar-toggler navbar-toggler-custom collapsed" type="button"
+        data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="toggler-icon"></span>
+</button>
 
 
-        <!-- Language dropdown -->
-    <ul class="navbar-nav ms-auto">
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="languageDropdown" role="button"
-          data-bs-toggle="dropdown" aria-expanded="false">
-          🌐 {{ 'Ελληνικά' if session.get('lang','el')=='el' else 'English' }}
-        </a>
-        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="languageDropdown">
-          <li>
-            <a class="dropdown-item" href="{{ url_for('main.set_language', lang='el') }}">Ελληνικά</a>
-          </li>
-          <li>
-            <a class="dropdown-item" href="{{ url_for('main.set_language', lang='en') }}">English</a>
-          </li>
-        </ul>
-      </li>
-    </ul>
 
+    <!-- Collapsible links -->
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav mx-auto">
+        {% for key, item in navbar.items() %}
+        <li class="nav-item px-2">
+          <a class="nav-link {% if request.path == item.url %}active{% endif %}" href="{{ item.url }}">
+            {{ item.label }}
+          </a>
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
 
+    <!-- Language toggle for md+ screens -->
+    <a class="nav-link d-none d-md-block" 
+       href="{{ url_for('main.set_language', lang='en' if session.get('lang','el')=='el' else 'el') }}">
+      {% if session.get('lang','el') == 'el' %}
+        <img src="{{ url_for('static', filename='images/flags/4x3/us.svg') }}" width="28" height="21" alt="US">
+        EN
+      {% else %}
+        <img src="{{ url_for('static', filename='images/flags/4x3/gr.svg') }}" width="28" height="21" alt="GR">
+        GR
+      {% endif %}
+    </a>
 
   </div>
 </nav>

@@ -1,0 +1,29 @@
+{
+  "navbar": {
+    "about_me": {"label": "About Me", "url": "/pages/about_me.html"},
+    "private": {"label": "Private", "url": "/pages/private.html"},
+    "corporate": {"label": "Corporate", "url": "/pages/corporate.html"},
+    "useful_links": {"label": "Useful Links", "url": "/pages/useful_links.html"},
+    "contact": {"label": "Contact", "url": "/pages/contact.html"}
+  },
+
+   "index": {
+    "title": "Welcome to My Website",
+    "paragraphs": [
+      "This is the home page.",
+      "More content here..."
+    ]
+  },
+
+
+  "about_me": {
+    "title": "Good morning from me!",
+    "paragraphs": [
+      "This page is about me: life is beautiful!!!",
+      "Paragraph 2 content...",
+      "Paragraph 3 content...",
+      "Paragraph 4 content...",
+      "Paragraph 5 content..."
+    ]
+  }
+}

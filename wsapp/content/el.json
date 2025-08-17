@@ -1,0 +1,29 @@
+{
+  "navbar": {
+    "about_me": {"label": "Ποιος Είμαι", "url": "/pages/about_me.html"},
+    "private": {"label": "Ιδιώτες", "url": "/pages/private.html"},
+    "corporate": {"label": "Επιχειρίσεις", "url": "/pages/corporate.html"},
+    "useful_links": {"label": "Χρήσιμοι Σύνδεσμοι", "url": "/pages/useful_links.html"},
+    "contact": {"label": "Επικοινωνία", "url": "/pages/contact.html"}
+  },
+
+  "index": {
+    "title": "Καλώς ήλθατε στο Website μου",
+    "<h3></h3>": "Ποιος Είμαι",
+    "paragraphs": [
+      "Αυτή είναι η αρχική σελίδα.",
+      "Περισσότερο περιεχόμενο εδώ..."
+    ]
+  },
+
+  "about_me": {
+    "title": "Ποιος Είμαι",
+    "paragraphs": [
+      "ΑΥΤΗ Η ΣΕΛΙΔΑ ΑΦΟΡΑ ΕΜΕΝΑ: Η ΖΩΗ ΕΙΝΑΙ ΩΡΑΙΑ!!!",
+      "Παράγραφος 2...",
+      "Παράγραφος 3...",
+      "Παράγραφος 4...",
+      "Παράγραφος 5..."
+    ]
+  }
+}

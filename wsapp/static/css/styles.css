@@ -1,64 +1,94 @@
+/* Body background */
 body {
-	background-color: #f8f9fa;
+  background-color: #f8f9fa;
 }
 
-.container{
-	margin-top: 20px;
-}
-
+/* Navbar general */
 .navbar {
-  display: flex;              /* Make it a flex container */
-  justify-content: center;    /* Center items horizontally */
-  align-items: center;        /* Center items vertically */
-  gap: 2rem;                   /* Space between links */
-  padding: 0rem;
-  background-color: rgba(0, 0, 0, 0.5); /* Optional background */
+  display: flex;
+  justify-content: center;   /* center nav links horizontally */
+  align-items: center;       /* vertical alignment */
+  gap: 2rem;
+  padding: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* optional semi-transparent dark */
 }
 
+/* Navbar brand alignment */
+.navbar-brand {
+  display: flex;
+  align-items: center;      /* vertical center with links */
+  padding: 0.5rem 1rem;
+  color: white;
+  text-decoration: none;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
 
+/* Navbar links */
 .navbar-nav .nav-link {
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
-}
-
-.navbar-nav .nav-link:hover {
-  text-decoration-line: underline;
-  text-decoration-color: red;
-  text-decoration-thickness: 1px;
-  text-underline-offset: 10px; /* how far is the red line below the letters */
-}
-
-.navbar a {
+  padding: 0.5rem 0.75rem;
   color: white;
   text-decoration: none;
   font-weight: normal;
 }
 
+/* Active link underline */
 .navbar-nav .nav-link.active {
-  text-decoration-line: underline;
+  text-decoration: underline;
   text-decoration-color: red;
   text-decoration-thickness: 1px;
-  text-underline-offset: 10px; /* how far is the red line below the letters */
+  text-underline-offset: 10px;
 }
 
-/* Fix language dropdown visibility */
-/* Dark-themed language dropdown */
+/* Hover effect for links */
+.navbar-nav .nav-link:hover {
+  text-decoration: underline;
+  text-decoration-color: red;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 10px;
+}
+
+/* Language selector */
+.navbar-nav .dropdown-toggle.nav-link {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 0.75rem;
+  color: #ffc107 !important;       /* yellow text */
+  background-color: transparent !important;
+  font-weight: normal;
+}
+
+/* Hover for language selector */
+.navbar-nav .dropdown-toggle.nav-link:hover,
+.navbar-nav .dropdown-toggle.nav-link:focus {
+  color: #ffc107 !important;
+  background-color: transparent !important;
+}
+
+/* Space between flag and text */
+.navbar-nav .dropdown-toggle img {
+  margin-right: 0.5rem;
+}
+
+/* Language dropdown */
 .dropdown-menu {
-  background-color: #343a40 !important; /* Dark gray (same as navbar-dark bg-dark) */
+  background-color: #343a40 !important; /* dark background */
   border: 1px solid rgba(255, 255, 255, 0.15);
 }
 
+/* Dropdown items */
 .dropdown-item {
-  color: #f8f9fa !important;  /* Light text */
+  color: #f8f9fa !important;
 }
 
+/* Hover effect for dropdown items */
 .dropdown-item:hover {
-  background-color: #495057 !important;  /* Slightly lighter gray on hover */
+  background-color: #495057 !important; /* slightly lighter gray */
   color: #fff !important;
 }
 
-
-footer{
-	color: #fff;
-	background-color: #343a40;
+/* Footer */
+footer {
+  color: #fff;
+  background-color: #343a40;
 }

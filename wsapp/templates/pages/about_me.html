@@ -2,46 +2,16 @@
 
 
 {% block title %}
-    Καλημέρα από εμένα!
+    {{ content.title }}
 {% endblock title %}
 
 
 {% block content %}
 
-    <h3>ΑΥΤΗ Η ΣΕΛΙΔΑ ΑΦΟΡΑ ΕΜΕΝΑ: Η ΖΩΗ ΕΙΝΑΙ ΩΡΑΙΑ!!!</h3>
+    <h3>{{ t['about_me_heading'] }}</h3>
 
-<p>Lorem Ipsum
-"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."
-"There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain..."
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque consectetur massa et mauris sodales malesuada. Fusce laoreet turpis at mauris mattis porttitor. Nam lacinia urna at leo gravida, eu ullamcorper neque ornare. Fusce mollis odio dolor, commodo mollis ligula fringilla et. Ut eu sagittis ligula. Phasellus vulputate dignissim sagittis. Phasellus auctor faucibus neque, vel ultricies odio convallis vel. Cras tristique eleifend dui, in porta ligula tempus sed. Etiam sed fermentum orci, sit amet pharetra ligula. Mauris vitae ante volutpat, pharetra nunc sed, euismod purus. Duis hendrerit eros nunc, eget elementum erat pharetra in. Nullam molestie, odio ut porta interdum, arcu metus viverra quam, vel auctor purus purus aliquam nibh. Sed molestie lorem at efficitur tempus. Aliquam nec ipsum nec nulla egestas varius et placerat dolor. Vivamus ut sem aliquet, tincidunt mi in, dictum urna. Duis eget volutpat lectus.
-
-Praesent volutpat eu elit at lobortis. Mauris varius, dolor id sodales scelerisque, lectus mauris aliquet ante, eget mattis nisl velit ac leo. Nulla placerat sit amet ipsum id viverra. Nullam ante sapien, feugiat in arcu et, egestas egestas tellus. Aenean sed egestas ante. Mauris maximus scelerisque lectus ultricies viverra. Nulla dictum laoreet augue, elementum feugiat quam congue ut. Maecenas at placerat neque, at dictum nunc. Aliquam blandit vel arcu at viverra. Aenean sit amet quam in lectus tempor hendrerit ut a tellus. Aliquam aliquam odio id augue dapibus viverra. Donec fermentum tincidunt erat id vehicula. Aliquam vulputate cursus ullamcorper. Vivamus condimentum tristique ante non posuere. Nullam varius libero tristique, volutpat ex ut, consequat nibh. Nam neque nulla, condimentum vel felis in, dictum iaculis purus.
-
-Phasellus sed malesuada neque. Donec a porta leo. Phasellus vel dolor et tellus accumsan cursus vel sit amet libero. Integer eu velit ut nibh ullamcorper elementum eu et erat. Donec quam justo, molestie at sem vel, egestas aliquam eros. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed in dui sit amet nunc elementum lobortis. In vestibulum hendrerit lacus id ullamcorper. Vestibulum volutpat elit eget tellus interdum, et tempus sapien vestibulum. Ut augue nisl, consequat vel quam ac, ullamcorper vehicula quam. Vivamus eget nibh maximus, facilisis massa rutrum, auctor nulla. Nunc hendrerit massa a magna facilisis, a pretium ante ullamcorper. Nunc egestas molestie ex, nec sagittis justo luctus porta. Suspendisse sagittis nisi dui, quis condimentum tellus lacinia vitae. Quisque sed libero laoreet ex sollicitudin auctor sed at nunc. Vestibulum nec lorem scelerisque nunc posuere rutrum.
-
-Aenean aliquam mauris nec nunc rhoncus suscipit sit amet et ex. Sed nec ex ut neque malesuada sollicitudin. Aliquam pharetra tincidunt justo, ut tristique sapien semper in. Nullam condimentum ut justo eu pellentesque. Quisque consectetur massa sit amet consequat ornare. Proin vestibulum turpis nec lacinia pellentesque. Praesent vel arcu consectetur, mollis sem at, tempor tortor. Aenean sit amet eros sollicitudin est dapibus euismod sed nec mauris. Phasellus tortor erat, dapibus in ipsum eu, placerat fringilla magna. Sed rhoncus odio nec elit mollis vulputate. Etiam blandit quam lorem, ac aliquam odio fringilla ac. Nunc sem enim, vestibulum in purus quis, finibus mollis diam. Nam ornare, magna sed semper ultrices, lorem odio imperdiet leo, quis aliquam neque diam a nulla. Aliquam blandit elementum diam non tincidunt.
-
-Vestibulum viverra lacus enim, quis ultrices ligula posuere a. Cras eget ligula sed nisi elementum imperdiet. Curabitur molestie gravida condimentum. Fusce sed dui nibh. Nunc iaculis, erat non consequat viverra, mauris tellus finibus nisi, id pulvinar dui erat sed massa. Cras id ultricies eros. Cras nec viverra turpis.
-
-Generated 5 paragraphs, 571 words, 3821 bytes of Lorem Ipsum
-help@lipsum.com
-Privacy Policy · Privacy Preferences</p>
-
-<p>Lorem Ipsum
-"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."
-"There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain..."
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque consectetur massa et mauris sodales malesuada. Fusce laoreet turpis at mauris mattis porttitor. Nam lacinia urna at leo gravida, eu ullamcorper neque ornare. Fusce mollis odio dolor, commodo mollis ligula fringilla et. Ut eu sagittis ligula. Phasellus vulputate dignissim sagittis. Phasellus auctor faucibus neque, vel ultricies odio convallis vel. Cras tristique eleifend dui, in porta ligula tempus sed. Etiam sed fermentum orci, sit amet pharetra ligula. Mauris vitae ante volutpat, pharetra nunc sed, euismod purus. Duis hendrerit eros nunc, eget elementum erat pharetra in. Nullam molestie, odio ut porta interdum, arcu metus viverra quam, vel auctor purus purus aliquam nibh. Sed molestie lorem at efficitur tempus. Aliquam nec ipsum nec nulla egestas varius et placerat dolor. Vivamus ut sem aliquet, tincidunt mi in, dictum urna. Duis eget volutpat lectus.
-
-Praesent volutpat eu elit at lobortis. Mauris varius, dolor id sodales scelerisque, lectus mauris aliquet ante, eget mattis nisl velit ac leo. Nulla placerat sit amet ipsum id viverra. Nullam ante sapien, feugiat in arcu et, egestas egestas tellus. Aenean sed egestas ante. Mauris maximus scelerisque lectus ultricies viverra. Nulla dictum laoreet augue, elementum feugiat quam congue ut. Maecenas at placerat neque, at dictum nunc. Aliquam blandit vel arcu at viverra. Aenean sit amet quam in lectus tempor hendrerit ut a tellus. Aliquam aliquam odio id augue dapibus viverra. Donec fermentum tincidunt erat id vehicula. Aliquam vulputate cursus ullamcorper. Vivamus condimentum tristique ante non posuere. Nullam varius libero tristique, volutpat ex ut, consequat nibh. Nam neque nulla, condimentum vel felis in, dictum iaculis purus.
-
-Phasellus sed malesuada neque. Donec a porta leo. Phasellus vel dolor et tellus accumsan cursus vel sit amet libero. Integer eu velit ut nibh ullamcorper elementum eu et erat. Donec quam justo, molestie at sem vel, egestas aliquam eros. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed in dui sit amet nunc elementum lobortis. In vestibulum hendrerit lacus id ullamcorper. Vestibulum volutpat elit eget tellus interdum, et tempus sapien vestibulum. Ut augue nisl, consequat vel quam ac, ullamcorper vehicula quam. Vivamus eget nibh maximus, facilisis massa rutrum, auctor nulla. Nunc hendrerit massa a magna facilisis, a pretium ante ullamcorper. Nunc egestas molestie ex, nec sagittis justo luctus porta. Suspendisse sagittis nisi dui, quis condimentum tellus lacinia vitae. Quisque sed libero laoreet ex sollicitudin auctor sed at nunc. Vestibulum nec lorem scelerisque nunc posuere rutrum.
-
-Aenean aliquam mauris nec nunc rhoncus suscipit sit amet et ex. Sed nec ex ut neque malesuada sollicitudin. Aliquam pharetra tincidunt justo, ut tristique sapien semper in. Nullam condimentum ut justo eu pellentesque. Quisque consectetur massa sit amet consequat ornare. Proin vestibulum turpis nec lacinia pellentesque. Praesent vel arcu consectetur, mollis sem at, tempor tortor. Aenean sit amet eros sollicitudin est dapibus euismod sed nec mauris. Phasellus tortor erat, dapibus in ipsum eu, placerat fringilla magna. Sed rhoncus odio nec elit mollis vulputate. Etiam blandit quam lorem, ac aliquam odio fringilla ac. Nunc sem enim, vestibulum in purus quis, finibus mollis diam. Nam ornare, magna sed semper ultrices, lorem odio imperdiet leo, quis aliquam neque diam a nulla. Aliquam blandit elementum diam non tincidunt.
-
-Vestibulum viverra lacus enim, quis ultrices ligula posuere a. Cras eget ligula sed nisi elementum imperdiet. Curabitur molestie gravida condimentum. Fusce sed dui nibh. Nunc iaculis, erat non consequat viverra, mauris tellus finibus nisi, id pulvinar dui erat sed massa. Cras id ultricies eros. Cras nec viverra turpis.
-
-Generated 5 paragraphs, 571 words, 3821 bytes of Lorem Ipsum
-help@lipsum.com
-Privacy Policy · Privacy Preferences</p>
+{% for paragraph in content.paragraphs %}
+        <p>{{ paragraph }}</p>
+    {% endfor %}
 
 {% endblock content %}
