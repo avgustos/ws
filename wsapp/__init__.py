@@ -1,20 +1,13 @@
-# The __init__.py serves double duty: it will contain the application factory,
-# and it tells Python that the flaskr directory should be treated as a package.
+# wsapp/__init__.py
 
 import os
-
-from flask import Flask, render_template
-
-
-# The following function is known as the application factory. Any configuration, registration,
-# and other setup the application needs will happen inside the function, then the application
-# will be returned.
+from flask import Flask, session
 
 def create_app(test_config=None):
     # create and configure the app
     app = Flask(__name__, instance_relative_config=True)
     app.config.from_mapping(
-        SECRET_KEY='dev',
+        SECRET_KEY='dev',  # change to something secure in production
         DATABASE=os.path.join(app.instance_path, 'wsapp.sqlite'),
     )
 
@@ -31,7 +24,13 @@ def create_app(test_config=None):
     except OSError:
         pass
 
-    # Register the blueprint
+    # ---- LANGUAGE SESSION HANDLER ----
+    @app.before_request
+    def set_default_language():
+        if 'lang' not in session:
+            session['lang'] = 'el'  # default language is Greek
+
+    # ---- REGISTER BLUEPRINT ----
     from .routes import main
     app.register_blueprint(main)
 

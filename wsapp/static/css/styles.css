@@ -41,6 +41,21 @@ body {
   text-underline-offset: 10px; /* how far is the red line below the letters */
 }
 
+/* Fix language dropdown visibility */
+/* Dark-themed language dropdown */
+.dropdown-menu {
+  background-color: #343a40 !important; /* Dark gray (same as navbar-dark bg-dark) */
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.dropdown-item {
+  color: #f8f9fa !important;  /* Light text */
+}
+
+.dropdown-item:hover {
+  background-color: #495057 !important;  /* Slightly lighter gray on hover */
+  color: #fff !important;
+}
 
 
 footer{
