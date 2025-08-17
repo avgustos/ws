@@ -1,54 +1,53 @@
 <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
-  <div class="container-fluid">
+  <div class="container-fluid d-flex align-items-center">
 
-    <!-- Left: Logo -->
+    <!-- Logo -->
     <a class="navbar-brand" href="/">
-      <img src="{{ url_for('static', filename='images/favicons/favicon.ico') }}" alt="George" width="32" height="32">
+      <img src="{{ url_for('static', filename='images/favicons/favicon.ico') }}" 
+           alt="George" width="32" height="32">
     </a>
 
-    <!-- Mobile Toggle -->
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <!-- Hamburger -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+      data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" 
+      aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
 
-    <!-- Navbar links container -->
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <div class="d-flex w-100 justify-content-between align-items-center">
-
-        <!-- Center links -->
-        <ul class="navbar-nav mx-auto">
-          <li class="nav-item px-2">
-            <a class="nav-link {% if request.path == '/pages/private.html' %}active{% endif %}" 
-               href="/pages/private.html">Ιδιώτες</a>
-          </li>
-          <li class="nav-item px-2">
-            <a class="nav-link {% if request.path == '/pages/corporate.html' %}active{% endif %}" 
-               href="/pages/corporate.html">Επιχειρήσεις</a>
-          </li>
-          <li class="nav-item px-2">
-            <a class="nav-link {% if request.path == '/pages/useful_links.html' %}active{% endif %}" 
-               href="/pages/useful_links.html">Χρήσιμοι Σύνδεσμοι</a>
-          </li>
-          <li class="nav-item px-2">
-            <a class="nav-link {% if request.path == '/pages/contact.html' %}active{% endif %}" 
-               href="/pages/contact.html">Επικοινωνία</a>
-          </li>
-        </ul>
-
-        <!-- Right links -->
-        <ul class="navbar-nav">
-          <li class="nav-item px-2">
-            <a class="nav-link {% if request.path == '/signup/' %}active{% endif %}" href="/signup/">Εγγραφή</a>
-          </li>
-          <li class="nav-item px-2">
-            <a class="nav-link {% if request.path == '/login/' %}active{% endif %}" href="/login/">Είσοδος</a>
-          </li>
-        </ul>
-
-      </div>
+    <!-- Navbar links -->
+    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item px-2">
+          <a class="nav-link {% if request.path == '/pages/private.html' %}active{% endif %}" href="/pages/private.html">Ιδιώτες</a>
+        </li>
+        <li class="nav-item px-2">
+          <a class="nav-link {% if request.path == '/pages/corporate.html' %}active{% endif %}" href="/pages/corporate.html">Επιχειρήσεις</a>
+        </li>
+        <li class="nav-item px-2">
+          <a class="nav-link {% if request.path == '/pages/useful_links.html' %}active{% endif %}" href="/pages/useful_links.html">Χρήσιμοι Σύνδεσμοι</a>
+        </li>
+        <li class="nav-item px-2">
+          <a class="nav-link {% if request.path == '/pages/contact.html' %}active{% endif %}" href="/pages/contact.html">Επικοινωνία</a>
+        </li>
+        <li class="nav-item px-2">
+          <a class="nav-link {% if request.path == '/pages/newpage.html' %}active{% endif %}" href="/pages/newpage.html">Νέα Σελίδα</a>
+        </li>
+      </ul>
     </div>
+
+    <!-- Language dropdown styled like nav link -->
+    <ul class="navbar-nav ms-auto">
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="languageDropdown" role="button" 
+           data-bs-toggle="dropdown" aria-expanded="false">
+          🌐 Ελληνικά
+        </a>
+        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="languageDropdown">
+          <li><a class="dropdown-item" href="?lang=el">Ελληνικά</a></li>
+          <li><a class="dropdown-item" href="?lang=en">English</a></li>
+        </ul>
+      </li>
+    </ul>
 
   </div>
 </nav>
-

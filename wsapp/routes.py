@@ -11,6 +11,11 @@ main = Blueprint('main', __name__)
 def root():
     return render_template('pages/index.html')
 
+@main.route('/pages/about_me')
+@main.route('/pages/about_me.html')
+def about_me():
+    return render_template('pages/about_me.html')
+
 @main.route('/pages/private')
 @main.route('/pages/private.html')
 def private():
