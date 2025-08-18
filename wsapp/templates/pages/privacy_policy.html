@@ -1,0 +1,19 @@
+{% extends "/base/base.html" %}
+
+
+{% block title %}
+
+    {{ content.title }}
+    
+{% endblock title %}
+
+
+
+
+{% block content %}
+
+    {% for paragraph in content.paragraphs %}
+        <p>{{ paragraph }}</p>
+    {% endfor %}
+
+{% endblock content %}

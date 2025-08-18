@@ -29,6 +29,7 @@ def set_language(lang):
     # Redirect back to the page that sent the request, or home
     return redirect(request.referrer or url_for('main.index'))
 
+
 # ---- PAGES ----
 @main.route('/')
 @main.route('/pages/')
@@ -74,4 +75,14 @@ def contact():
     lang = session.get('lang', 'el')
     content = load_content(lang)
     return render_template('pages/contact.html', content=content['contact'], navbar=content['navbar'])
+
+
+@main.route('/pages/privacy_policy')
+@main.route('/pages/privacy_policy.html')
+def privacy_policy():
+    lang = session.get('lang', 'el')
+    content = load_content(lang)
+    return render_template('pages/privacy_policy.html', content=content['privacy_policy'], navbar=content['navbar'])
+
+
 

@@ -136,3 +136,26 @@ body {
     box-shadow: none;
 }
 
+
+/* FOOTER */
+.footer {
+   display: flex;
+  justify-content: center;   /* center nav links horizontally */
+  align-items: center;       /* vertical alignment */
+  gap: 2rem;
+  padding: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* optional semi-transparent dark */
+}
+
+.footer a {
+  color: #ffc107; /* gold link */
+  text-decoration: none;
+  margin-left: 1rem;
+}
+
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+

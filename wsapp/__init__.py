@@ -2,10 +2,17 @@
 
 import os
 from flask import Flask, session
+from datetime import datetime
 
 def create_app(test_config=None):
     # create and configure the app
     app = Flask(__name__, instance_relative_config=True)
+
+    # make current_year available to all templates
+    @app.context_processor
+    def inject_year():
+        return {'current_year': datetime.now().year}
+
     app.config.from_mapping(
         SECRET_KEY='dev',  # change to something secure in production
         DATABASE=os.path.join(app.instance_path, 'wsapp.sqlite'),
