@@ -1,6 +1,11 @@
-  <!-- templates/footer.html -->
+
+
+
+    <!-- templates/footer.html -->
 <footer class="footer bg-dark text-white text-center py-1 mt-auto">
   <div class="container">
-    <p class="mb-1">&copy; {{ current_year }}  Γεώργιος Μαυρίδης, Ασφαλιστικός Πράκτορας - Αθήνα | <a href="{{ url_for('main.privacy_policy') }}" class="text-white"> Privacy Policy </a></p> 
+    <p class="mb-1">&copy; {{ current_year }}  {{ footer_left }} | <a href="{{ url_for('main.privacy_policy') }}" class="text-white"> {{ footer_right }} </a></p> 
   </div>
 </footer>
+
+

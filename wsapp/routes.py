@@ -85,4 +85,9 @@ def privacy_policy():
     return render_template('pages/privacy_policy.html', content=content['privacy_policy'], navbar=content['navbar'])
 
 
-
+@main.route('/base/footer')
+@main.route('/base/footer.html')
+def footer():
+    lang = session.get('lang', 'el')
+    content = load_content(lang)
+    return render_template('base/footer.html', content=content['footer'], navbar=content['navbar'])

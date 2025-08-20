@@ -12,6 +12,8 @@
 
 {% block content %}
 
+    <h3>{{ content.heading }}</h3>
+
     {% for paragraph in content.paragraphs %}
         <p>{{ paragraph }}</p>
     {% endfor %}

@@ -30,11 +30,17 @@
 
   "privacy_policy": {
     "title": "Privacy Policy",
+    "heading": "Personal Data Protection Policy",
     "paragraphs": [
       "This website collects personal data from users who fill out the contact form, including their name, email address, and message content. This information is used solely to respond to inquiries and is not shared with third parties.",
       "We use Google Analytics to collect anonymous traffic data, such as page visits and device types, to better understand how users interact with the site. This data is anonymous and does not identify individual users.",
       "By using this site, you agree to the collection and use of information in accordance with this policy.",
       "If you have any questions or would like your data removed, please contact me through the contact form."
     ]
+  },
+
+  "footer": {
+    "footer_left": "George Mavridis - Insurance Agent",
+    "footer_right": "Privacy Policy"
   }
 }
