@@ -1,6 +1,7 @@
 # wsapp/routes.py
 
 from flask import Blueprint, render_template, session, redirect, request, url_for, current_app
+from datetime import datetime
 import json
 import os
 
@@ -29,6 +30,18 @@ def set_language(lang):
     # Redirect back to the page that sent the request, or home
     return redirect(request.referrer or url_for('main.index'))
 
+# ---- CONTEXT PROCESSOR ----
+@main.app_context_processor
+def inject_globals():
+    lang = session.get('lang', 'el')
+    content = load_content(lang)
+    return {
+        'footer_left': content['footer']['footer_left'],
+        'footer_right': content['footer']['footer_right'],
+        'navbar': content['navbar'],
+        'current_year': datetime.now().year
+    }
+
 
 # ---- PAGES ----
 @main.route('/')
@@ -37,6 +50,7 @@ def set_language(lang):
 def index():
     lang = session.get('lang', 'el')
     content = load_content(lang)
+    print(content)
     return render_template('pages/index.html', content=content['index'], navbar=content['navbar'])
 
 @main.route('/pages/about_me')
@@ -44,6 +58,7 @@ def index():
 def about_me():
     lang = session.get('lang', 'el')
     content = load_content(lang)
+    print(content)
     return render_template('pages/about_me.html', content=content['about_me'], navbar=content['navbar'])
 
 @main.route('/pages/private')
@@ -83,11 +98,3 @@ def privacy_policy():
     lang = session.get('lang', 'el')
     content = load_content(lang)
     return render_template('pages/privacy_policy.html', content=content['privacy_policy'], navbar=content['navbar'])
-
-
-@main.route('/base/footer')
-@main.route('/base/footer.html')
-def footer():
-    lang = session.get('lang', 'el')
-    content = load_content(lang)
-    return render_template('base/footer.html', content=content['footer'], navbar=content['navbar'])

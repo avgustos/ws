@@ -39,8 +39,9 @@
     ]
   },
 
-  "footer": {
-    "footer_left": "George Mavridis - Insurance Agent",
-    "footer_right": "Privacy Policy"
-  }
+  
+"footer": {
+  "footer_left": "George Mavridis - Insurance Agent",
+  "footer_right": "Privacy Policy"
+}
 }

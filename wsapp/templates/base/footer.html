@@ -1,12 +1,11 @@
-    <!-- templates/footer.html -->
-<footer class="footer bg-dark text-white text-center py-1 mt-auto">
-  <div class="container">
-    <p class="mb-1">
-      &copy; {{ current_year }} {{ footer_left }} |
-      <a href="{{ url_for('main.privacy_policy') }}" class="text-white">
-        {{ footer_right }}
-      </a>
+
+<footer class="footer bg-dark text-white text-center py-2 mt-auto">
+  <div class="container-fluid">
+    <p class="mb-2">
+      &copy; {{ current_year }} {{ footer_left }} | 
+      <a href="{{ url_for('main.privacy_policy') }}" class="text-white">{{ footer_right }}</a>
     </p>
   </div>
 </footer>
+
 
