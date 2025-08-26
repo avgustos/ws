@@ -17,15 +17,60 @@
 
 
   "about_me": {
-    "title": "Good morning from me!",
+    "title": "About Me",
+    "heading": "About Me",
     "paragraphs": [
-      "This page is about me: life is beautiful!!!",
-      "Paragraph 2 content...",
-      "Paragraph 3 content...",
-      "Paragraph 4 content...",
-      "Paragraph 5 content..."
+      "Hi, I’m George Mavridis.",
+      "I’ve been working in the insurance field since 1997, helping businesses and individuals secure coverage that truly fits their needs.",
+      "My background in science, I hold a Bachelor’s degree in Chemistry from Kansas State University (1987) - and my early career as a Quality Control Supervisor in the pharmaceutical industry, taught me the value of precision, reliability, and clear communication.",
+      "In 1997, Ι reoriented my professional path, shifting from ensuring the quality of medicinal products to ensuring the quality of people’s lives after a random, unforeseen and damaging event.",
+      "In recent years, I’ve specialized in corporate insurance solutions for small and medium-sized businesses, while continuing to support individuals with health, property and automobile insurance policies.",
+      "My approach to your insurance related issues is direct, clear, and personalized. I believe that insurance should not feel like another puzzle in your life - but like what it truly is: a safety net."
     ]
   },
+
+
+  "corporate": {
+    "title": "Businesses",
+    "heading": "Corporate Insurance Services",
+    "paragraphs": [
+      "🧱 Property Insurance – Secure your business assets against fire, theft, vandalism, and natural disasters. Commercial property insurance ensures your building, equipment, and inventory are protected—minimizing downtime and financial loss after unexpected events.",
+      "⏸️ Business Interruption Insurance – When operations stop, bills don’t. Business interruption insurance helps cover lost income, rent, and employee wages during unexpected closures—keeping your business afloat while you recover.",
+      "🚚 Commercial Auto Insurance – If your business uses vehicles, protect them and your team. Commercial auto insurance covers accidents, theft, and liability—keeping your operations moving smoothly and legally.",
+      "🛡️ General Liability Insurance – Protect your business from costly lawsuits due to third-party injuries, property damage, or personal injury claims. General liability insurance is essential for any business that interacts with clients or the public—safeguarding your reputation and finances.",
+      "✍️ Professional Liability Insurance (Errors & Omissions) – Even experts make mistakes. Professional liability insurance covers claims of negligence, errors, or omissions in your services—crucial for consultants, freelancers, and service-based businesses.",
+      "🏷️ Product Liability Insurance – Selling products? You need this. Product liability insurance covers legal and medical costs if your product causes harm—protecting your finances and brand from potential lawsuits.",
+      "👥 Employment Practices Liability Insurance (EPLI) – Don’t let an HR issue derail your business. EPLI covers claims like wrongful termination, discrimination, or harassment—essential protection as your team grows.",
+      "🚑 Workers’ Compensation Insurance – Protect your team and your company. Workers’ compensation covers medical bills and lost wages if an employee gets injured at work—ensuring compliance and reducing the risk of lawsuits.",
+      "🩺 Group Health Insurance – Provides medical coverage for your employees and their families, enhancing their sense of security and well-being in the workplace. The coverage may include hospitalization costs, diagnostic tests, and preventive check-ups, making it a valuable tool for attracting and retaining talented personnel.",
+      "💼 Directors and Officers (D&O) Insurance – Shield your leadership team from personal financial loss due to decisions made in their roles. D&O insurance protects your business’s key people from lawsuits over mismanagement or breach of duty.",
+      "👔 Key Person Insurance – Safeguard your company’s future. Key person insurance provides a financial safety net if a critical employee or founder dies or becomes disabled—helping your business stay stable in uncertain times.",
+      "🔒 Cyber Liability Insurance – One data breach can devastate your business. Cyber liability insurance covers the costs of cyberattacks, data breaches, and IT failures—ideal for companies handling sensitive or digital information.",
+      "⚖️ Legal Protection Insurance – Covers legal expenses and representation for your business in case of disputes with suppliers, customers, employees, or public authorities. It ensures that you can defend your interests without the burden of unexpected legal costs."
+    ]
+  },
+
+
+  "private": {
+    "title": "Ιδιώτες - ΔΕΝ ΤΟ ΕΧΩ ΑΝΑΠΤΥΞΕΙ ΑΚΟΜΗ",
+    "heading": "Ασφάλιση Ιδιωτών",
+    "paragraphs": [
+    "🧱 Ασφάλιση Περιουσιακών Στοιχείων – Προστατεύει τα ακίνητα, τον εξοπλισμό και τα αποθέματά σας από κινδύνους όπως πυρκαγιά, κλοπή ή φυσικές καταστροφές. Η κάλυψη αυτή εξασφαλίζει ότι δεν θα επηρεαστεί η λειτουργία της επιχείρησής σας εξαιτίας απρόβλεπτων ζημιών.",
+    "⏸️ Ασφάλιση Διακοπής Εργασιών – Όταν μια καταστροφή αναγκάζει την επιχείρησή σας να διακόψει τη λειτουργία της, αυτή η ασφάλιση καλύπτει τα χαμένα έσοδα και τα λειτουργικά έξοδα, βοηθώντας σας να σταθείτε γρήγορα ξανά στα πόδια σας.",
+    "🚚 Ασφάλιση Επαγγελματικών Οχημάτων – Εάν χρησιμοποιείτε οχήματα για τις επιχειρηματικές σας δραστηριότητες, αυτή η ασφάλιση καλύπτει ατυχήματα, ζημιές και ευθύνες που σχετίζονται με τα επαγγελματικά οχήματά σας.",
+    "🛡️ Ασφάλιση Γενικής Αστικής Ευθύνης – Η ασφάλιση αυτή καλύπτει νομικές αξιώσεις για σωματικές βλάβες ή ζημιές σε τρίτους που προκύπτουν από τη λειτουργία της επιχείρησής σας. Είναι απαραίτητη για επιχειρήσεις που αλληλεπιδρούν με πελάτες ή συνεργάτες, προστατεύοντας σας από δαπανηρές αγωγές και αποζημιώσεις.",
+    "✍️ Ασφάλιση Επαγγελματικής Ευθύνης (Errors & Omissions) – Για παρόχους υπηρεσιών, η ασφάλιση αυτή προστατεύει από αξιώσεις που προκύπτουν λόγω λαθών, παραλείψεων ή αμέλειας στην παροχή υπηρεσιών. Είναι κρίσιμη για συμβούλους, τεχνικούς και άλλους επαγγελματίες.",
+    "🏷️ Ασφάλιση Αστικής Ευθύνης Προϊόντος – Αν πουλάτε προϊόντα, η ασφάλεια αυτή καλύπτει ζημιές ή τραυματισμούς που προκαλούνται από ελαττωματικά προϊόντα, προστατεύοντας την επιχείρησή σας από δαπανηρές αποζημιώσεις.",
+    "👥 Ασφάλιση Εργασιακών Σχέσεων (EPLI) – Καλύπτει αγωγές που σχετίζονται με ζητήματα εργασιακών σχέσεων όπως απόλυση, διάκριση ή παρενόχληση. Είναι ιδιαίτερα σημαντική για επιχειρήσεις με προσωπικό, μειώνοντας νομικούς κινδύνους.",
+    "🚑 Ασφάλιση Εργατικών Ατυχημάτων – Η προστασία των εργαζομένων σας είναι βασική. Αυτή η ασφάλεια καλύπτει τα ιατρικά έξοδα και την αποζημίωση σε περίπτωση εργατικού ατυχήματος, εξασφαλίζοντας τη συμμόρφωση με τη νομοθεσία και μειώνοντας τον κίνδυνο αγωγών.",
+    "🩺 Ομαδική Ασφάλιση Υγείας – Παρέχει ιατροφαρμακευτική κάλυψη στους εργαζομένους σας και τις οικογένειές τους, ενισχύοντας την αίσθηση ασφάλειας και ευημερίας στο εργασιακό περιβάλλον. Η κάλυψη μπορεί να περιλαμβάνει έξοδα νοσηλείας, διαγνωστικές εξετάσεις και προληπτικούς ελέγχους, αποτελώντας ένα σημαντικό εργαλείο προσέλκυσης και διατήρησης ταλαντούχου ανθρώπινου δυναμικού.",
+    "💼 Ασφάλιση Διοικητικών Στελεχών (D&O) – Προστατεύει τα διοικητικά στελέχη από προσωπικές αγωγές που σχετίζονται με αποφάσεις ή ενέργειες που έλαβαν κατά την εκτέλεση των καθηκόντων τους, διασφαλίζοντας την ομαλή διοίκηση της επιχείρησης.",
+    "👔 Ασφάλιση Βασικών Στελεχών – Αυτή η ασφάλιση εξασφαλίζει οικονομική σταθερότητα στην επιχείρηση σε περίπτωση απώλειας κρίσιμου στελέχους λόγω θανάτου ή ανικανότητας, διασφαλίζοντας τη συνέχεια της λειτουργίας.",
+    "🔒 Ασφάλιση Αστικής Ευθύνης Κυβερνοκινδύνων – Με την αύξηση των ψηφιακών απειλών, αυτή η ασφάλιση καλύπτει ζημιές από παραβιάσεις δεδομένων, κυβερνοεπιθέσεις και απώλεια ψηφιακών πληροφοριών, προστατεύοντας την επιχείρησή σας από σημαντικές οικονομικές και φήμης απώλειες.",
+    "⚖️ Ασφάλιση Νομικής Προστασίας – Καλύπτει τα νομικά έξοδα και την εκπροσώπηση της επιχείρησής σας σε περίπτωση διαφορών με προμηθευτές, πελάτες, εργαζομένους ή δημόσιες αρχές. Σας παρέχει τη σιγουριά ότι θα μπορέσετε να υπερασπιστείτε τα συμφέροντά σας χωρίς το βάρος απρόβλεπτων δικαστικών εξόδων."
+    ]
+  },
+
 
 
   "privacy_policy": {

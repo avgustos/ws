@@ -8,9 +8,9 @@
 
 {% block content %}
 
-    <h3>{{ t['about_me_heading'] }}</h3>
+    <h3>{{ content.heading }}</h3>
 
-{% for paragraph in content.paragraphs %}
+    {% for paragraph in content.paragraphs %}
         <p>{{ paragraph }}</p>
     {% endfor %}
 
