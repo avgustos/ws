@@ -39,9 +39,22 @@
     ]
   },
 
+
+  "cookies_policy": {
+    "title": "Cookies Policy",
+    "heading": "Cookies Collection and Storage Policy",
+    "paragraphs": [
+      "Cookies are small text files that a website stores on your computer or mobile device when you visit that website. In this way, the website remembers your actions and preferences for a period of time, so you do not have to enter these preferences every time you visit the website or browse its pages. Cookies do not collect information individually, but when read by a server through a web browser they can provide information in order to offer a more user-friendly service.",
+      "Cookies are stored on your computer or device, after you have been informed about your privacy settings. If you do not accept cookies or some categories of them, some of the features of our website may not be fully available, but in no case will you be blocked from accessing our website. It is at your discretion to withdraw, whenever you wish, your consent or to oppose the use of cookies on your computer or device, to control and/or delete cookies. You can delete cookies from the computer or device you use, whenever you wish. In this way you withdraw your consent to the use of cookies on your computer or device. You can also configure the browser you use in such a way that it either warns you about the use of cookies in specific website services, or does not allow the acceptance of the use of cookies in any case.",
+      "This Cookies Policy may be modified at any time. For this reason, we consider it appropriate to regularly refer to this Policy.",
+      "This came into effect on August 01, 2025."
+    ]
+  },
+
   
 "footer": {
-  "footer_left": "George Mavridis - Insurance Agent",
-  "footer_right": "Privacy Policy"
+  "about_me": "George Mavridis - Insurance Agent",
+    "privacy_policy": "Privacy Policy",
+    "cookies_policy": "Cookies Policy"
 }
 }

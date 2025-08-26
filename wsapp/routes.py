@@ -36,8 +36,9 @@ def inject_globals():
     lang = session.get('lang', 'el')
     content = load_content(lang)
     return {
-        'footer_left': content['footer']['footer_left'],
-        'footer_right': content['footer']['footer_right'],
+        'about_me': content['footer']['about_me'],
+        'privacy_policy': content['footer']['privacy_policy'],
+        'cookies_policy': content['footer']['cookies_policy'],
         'navbar': content['navbar'],
         'current_year': datetime.now().year
     }
@@ -58,7 +59,7 @@ def index():
 def about_me():
     lang = session.get('lang', 'el')
     content = load_content(lang)
-    print(content)
+    # print(content)
     return render_template('pages/about_me.html', content=content['about_me'], navbar=content['navbar'])
 
 @main.route('/pages/private')
@@ -98,3 +99,12 @@ def privacy_policy():
     lang = session.get('lang', 'el')
     content = load_content(lang)
     return render_template('pages/privacy_policy.html', content=content['privacy_policy'], navbar=content['navbar'])
+
+
+@main.route('/pages/cookies_policy')
+@main.route('/pages/cookies_policy.html')
+def cookies_policy():
+    lang = session.get('lang', 'el')
+    content = load_content(lang)
+    return render_template('pages/cookies_policy.html', content=content['cookies_policy'], navbar=content['navbar'])
+

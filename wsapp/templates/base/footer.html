@@ -2,8 +2,10 @@
 <footer class="footer bg-dark text-white text-center py-2 mt-auto">
   <div class="container-fluid">
     <p class="mb-2">
-      &copy; {{ current_year }} {{ footer_left }} | 
-      <a href="{{ url_for('main.privacy_policy') }}" class="text-white">{{ footer_right }}</a>
+      &copy; {{ current_year }}
+      <a href="{{ url_for('main.index') }}" class="text-white me-4">{{ about_me }}</a>| 
+      <a href="{{ url_for('main.privacy_policy') }}" class="text-white me-4">{{ privacy_policy }}</a>|
+      <a href="{{ url_for('main.cookies_policy') }}" class="text-white">{{ cookies_policy }}</a>
     </p>
   </div>
 </footer>
