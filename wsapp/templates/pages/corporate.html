@@ -13,10 +13,17 @@
 
 {% block content %}
 
-    <h3>{{ content.heading }}</h3>
+    <section class="services">
+        <h2>{{ content.title }}</h2>
+        <ul>
+            {% for item in content["items"] %}
+            <li>
+                <i class="{{ item.icon }}"></i>
+                <strong>{{ item.title }}</strong> – {{ item.text }}
+            </li>
+            {% endfor %}
+        </ul>
+</section>
 
-    {% for paragraph in content.paragraphs %}
-        <p>{{ paragraph }}</p>
-    {% endfor %}
 
 {% endblock content %}
