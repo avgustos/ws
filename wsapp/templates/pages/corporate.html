@@ -1,29 +1,27 @@
 {% extends "/base/base.html" %}
 
 
-
-{% block title %}
-
-    {{ content.title }}
-    
-{% endblock title %}
-
-
+{% block styles %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/corporate.css') }}">
+{% endblock %}
 
 
 {% block content %}
-
-    <section class="services">
-        <h2>{{ content.title }}</h2>
-        <ul>
-            {% for item in content["items"] %}
-            <li>
-                <i class="{{ item.icon }}"></i>
-                <strong>{{ item.title }}</strong> – {{ item.text }}
-            </li>
-            {% endfor %}
-        </ul>
+<section class="corporate-services">
+  <div class="container">
+    <h2>{{ content.title }}</h2>
+    <ul class="services-list">
+      {% for item in content["items"] %}
+        <li>
+            <span class="icon-circle">
+            <i class="{{ item.icon }}"></i>
+            </span>
+            <div class="service-text">
+            <strong>{{ item.title }}</strong> – {{ item.text }}
+            </div>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
 </section>
-
-
-{% endblock content %}
+{% endblock %}

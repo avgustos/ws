@@ -15,6 +15,8 @@
     <!-- My custom CSS -->
     <link rel="stylesheet" href="{{ url_for('static', filename='css/custom.css') }}">
 
+    {% block styles %}{% endblock %}
+
     <!-- Flags -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/6.6.6/css/flag-icons.min.css">
     
