@@ -2,7 +2,7 @@
   "navbar": {
     "about_me": {"label": "Ποιος Είμαι", "url": "/pages/about_me.html"},
     "private": {"label": "Ιδιώτες", "url": "/pages/private.html"},
-    "corporate": {"label": "Επιχειρίσεις", "url": "/pages/corporate.html"},
+    "corporate": {"label": "Επιχειρήσεις", "url": "/pages/corporate.html"},
     "useful_links": {"label": "Χρήσιμοι Σύνδεσμοι", "url": "/pages/useful_links.html"},
     "contact": {"label": "Επικοινωνία", "url": "/pages/contact.html"}
   },
