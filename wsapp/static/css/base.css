@@ -1,0 +1,152 @@
+/* =============
+   Base & Layout
+   ============= */
+body {
+  background-color: #f8f9fa;
+}
+
+.container {
+  margin-top: 20px;
+}
+
+/* =====================
+   Navbar General Styles
+   ===================== */
+.navbar {
+  display: flex;
+  justify-content: center;   /* center nav links horizontally */
+  align-items: center;       /* vertical alignment */
+  gap: 2rem;
+  padding: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* semi-transparent dark */
+}
+
+/* Navbar brand */
+.navbar-brand {
+  display: flex;
+  align-items: center;      /* vertical center */
+  padding: 0.5rem 1rem;
+  color: white;
+  text-decoration: none;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+/* Navbar links */
+.navbar-nav .nav-link {
+  color: white;
+  padding: 0.5rem 0.75rem;
+  text-decoration: none;
+  font-weight: normal;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+  text-decoration: underline;
+  text-decoration-color: red;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 10px;
+}
+
+/* =====================
+   Language Selector
+   ===================== */
+.navbar-nav .dropdown-toggle.nav-link {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 0.75rem;
+  color: #ffc107 !important;          /* yellow */
+  background-color: transparent !important;
+  font-weight: normal;
+}
+
+.navbar-nav .dropdown-toggle.nav-link:hover,
+.navbar-nav .dropdown-toggle.nav-link:focus {
+  color: #ffc107 !important;
+  background-color: transparent !important;
+}
+
+/* Space between flag and text */
+.navbar-nav .dropdown-toggle img {
+  margin-right: 0.5rem;
+}
+
+/* Dropdown menu */
+.dropdown-menu {
+  background-color: #343a40 !important; /* dark */
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.dropdown-item {
+  color: #f8f9fa !important;
+}
+
+.dropdown-item:hover {
+  background-color: #495057 !important; /* slightly lighter gray */
+  color: #fff !important;
+}
+
+/* =====================
+   Hamburger Button
+   ===================== */
+.navbar-toggler-custom {
+  border: none;
+  background: transparent;
+  padding: 0.25rem 0.5rem;
+  position: relative;
+  width: 30px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  outline: none;
+  box-shadow: none;
+}
+
+.navbar-toggler-custom .toggler-icon,
+.navbar-toggler-custom .toggler-icon::before,
+.navbar-toggler-custom .toggler-icon::after {
+  display: block;
+  background-color: white;  /* line color */
+  height: 3px;
+  width: 100%;
+  border-radius: 2px;
+  position: absolute;
+  transition: all 0.3s ease-in-out;
+}
+
+.navbar-toggler-custom .toggler-icon { top: 50%; transform: translateY(-50%); }
+.navbar-toggler-custom .toggler-icon::before { content: ''; top: -8px; }
+.navbar-toggler-custom .toggler-icon::after  { content: ''; top: 8px; }
+
+.navbar-toggler-custom:not(.collapsed) .toggler-icon { background-color: transparent; }
+.navbar-toggler-custom:not(.collapsed) .toggler-icon::before {
+  transform: rotate(45deg);
+  top: 0;
+}
+.navbar-toggler-custom:not(.collapsed) .toggler-icon::after {
+  transform: rotate(-45deg);
+  top: 0;
+}
+
+/* =====================
+   Footer
+   ===================== */
+.footer {
+  display: flex;
+  justify-content: center;   /* center nav links horizontally */
+  align-items: center;       /* vertical alignment */
+  gap: 2rem;
+  padding: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.footer a {
+  color: #ffc107; /* gold link */
+  text-decoration: none;
+  margin-left: 1rem;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
