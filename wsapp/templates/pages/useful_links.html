@@ -12,22 +12,27 @@
     <h2>{{ content.title }}</h2>
     <ul class="useful-links-list">
       {% for item in content["items"] %}
-        <li>
+  <li>
+    <span class="icon-circle">
+      <i class="{{ item.icon }}"></i>
+    </span>
 
-            <span class="icon-circle">
-              <i class="{{ item.icon }}"></i>
-            </span>
-
-            <div class="useful-link-text">
-              <strong>{{ item.title }}</strong> - 
-              {{ item.text }}
-              <a href="{{ item.link_url }}" target="_blank">{{ item.link_text }}</a>
-              {{ item.extra }}
-              <a href="{{ item.extra_link_url }}" target="_blank">{{ item.extra_link_text }}</a>
-            </div>
-
-        </li>
+    <div class="useful-link-text">
+      <strong>{{ item.title }}</strong>
+      {% for para in item.paragraphs %}
+        <p>
+          {% for part in para.parts %}
+            {% if part.type == "text" %}
+              {{ part.content }}
+            {% elif part.type == "link" %}
+              <a href="{{ part.url }}" target="_blank">{{ part.text }}</a>
+            {% endif %}
+          {% endfor %}
+        </p>
       {% endfor %}
+    </div>
+  </li>
+{% endfor %}
     </ul>
   </div>
 </section>

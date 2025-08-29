@@ -84,3 +84,11 @@
   text-decoration: underline;
 }
 
+.useful-link-text p {
+  margin: 0 0 0.75rem 0;
+}
+
+.useful-link-text p:last-child {
+  margin-bottom: 0; /* no extra space after last paragraph */
+}
+
