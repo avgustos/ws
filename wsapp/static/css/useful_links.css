@@ -1,0 +1,86 @@
+/* Useful Links Page Styles */
+.useful-links {
+  padding: 4rem 1rem;
+  background: #f9fafb; /* light neutral background */
+  font-family: "Inter", system-ui, sans-serif;
+  color: #1f2937; /* slate-800 */
+}
+
+.useful-links .container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Title */
+.useful-links h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 2.5rem;
+  color: #111827; /* slate-900 */
+}
+
+/* Service list */
+.useful-link-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.useful-links-list li {
+  display: flex;
+  align-items: flex-start;
+  background: white;
+  padding: 1.25rem;
+  margin-bottom: 1rem;
+  border-radius: 1rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.useful-links-list li:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+/* Icon circle */
+.icon-circle {
+  background-color: #e0f2fe;  /* light blue */
+  color: #1d4ed8;            /* primary blue */
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 1rem;
+  flex-shrink: 0;
+  font-size: 1.25rem;
+}
+
+/* Text */
+.useful-link-text {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.useful-link-text strong {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+  color: #111827;
+}
+
+/* Links inside useful link text */
+.useful-link-text a {
+  color: #2563eb;            /* blue-600 */
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.2s ease, text-decoration 0.2s ease;
+}
+
+.useful-link-text a:hover {
+  color: #1e40af;            /* blue-800 */
+  text-decoration: underline;
+}
+

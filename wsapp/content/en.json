@@ -76,24 +76,8 @@
   "useful_links": {
     "title": "Useful Links",
     "items": [
-                {
-                  "title": "Verify your Insurance Agent's Credentials",
-                  "text": "You can verify your insurance agent's credentials through the Single Information Point for Active Insurance Intermediaries",
-                  "link_text": "here",
-                  "link_url": "https://insuranceregistry.uhc.gr/Home/index_en",
-                  "extra": "and clicking on the link 'SEARCH', on the top right. There appears a form where you can either search by TAX NUMBER or GENERAL REGISTRY NUMBER, if you know them, or even by COMPANY NAME / LAST NAME. My credentials can be found",
-                  "extra_link_text": "here",
-                  "extra_link_url": "https://insuranceregistry.uhc.gr/agent_en/61587303000"
-                },
-                {
-                  "title": "Check Whether Your Vehicle is Insured",
-                  "text": "You can check whether any vehicle is insured or not, by entering only the registration number, at",
-                  "link_text": "gov.gr",
-                  "link_url": "https://dilosi.services.gov.gr/templates/VEHICLE-INSURANCE/create",
-                  "extra": "The service is available only in Greek. Alternatively, you can check whether any of your vehicles is insured or not, as well as the insurance company and the insured period, by entering your vehicle's registration number and your Tax Number (Α.Φ.Μ.), at",
-                  "extra_link_text": "Hellenic Center for Vehicle Information",
-                  "extra_link_url": "https://www.hic.gr/hic/check_ins.aspx"
-                }
+      { "icon": "fa-solid fa-user-tie", "title": "Verify your Insurance Agent's Credentials", "text": "You can verify your insurance agent's credentials through the Single Information Point for Active Insurance Intermediaries", "link_text": "here", "link_url": "https://insuranceregistry.uhc.gr/Home/index_en", "extra": "and clicking on the link 'SEARCH', on the top right. There appears a form where you can either search by TAX NUMBER or GENERAL REGISTRY NUMBER, if you know them, or even by COMPANY NAME / LAST NAME. My credentials can be found", "extra_link_text": "here", "extra_link_url": "https://insuranceregistry.uhc.gr/agent_en/61587303000" },
+      { "icon": "fa-solid fa-truck-moving", "title": "Check Whether Your Vehicle is Insured", "text": "You can check whether any vehicle is insured or not, by entering only the registration number, at", "link_text": "gov.gr", "link_url": "https://dilosi.services.gov.gr/templates/VEHICLE-INSURANCE/create", "extra": "The service is available only in Greek. Alternatively, you can check whether any of your vehicles is insured or not, as well as the insurance company and the insured period, by entering your vehicle's registration number and your Tax Number (Α.Φ.Μ.), at", "extra_link_text": "Hellenic Center for Vehicle Information", "extra_link_url": "https://www.hic.gr/hic/check_ins.aspx" }
     ]
   },
 

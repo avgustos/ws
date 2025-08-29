@@ -1,29 +1,33 @@
 {% extends "/base.html" %}
 
-
-{% block title %}
-
-    {{ content.title }}
-    
-{% endblock title %}
-
-
+{% block styles %}
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/useful_links.css') }}">
+{% endblock %}
 
 
 {% block content %}
 
-<section class="useful-info" id="useful-info">
-  <div data-lang="en">
-    <h3>{{ content.title }}</h3>
-    <ul>
-    {% for item in content["items"] %}
-    <li>
-        <strong>{{ item.title }}</strong> - {{ item.text }}
-        <a href="{{ item.link_url }}" target="_blank">{{ item.link_text }}</a>
-        {{ item.extra }}
-        <a href="{{ item.extra_link_url }}" target="_blank">{{ item.extra_link_text }}</a>.
-    </li>
-    {% endfor %}
+<section class="useful-links">
+  <div class="container">
+    <h2>{{ content.title }}</h2>
+    <ul class="useful-links-list">
+      {% for item in content["items"] %}
+        <li>
+
+            <span class="icon-circle">
+              <i class="{{ item.icon }}"></i>
+            </span>
+
+            <div class="useful-link-text">
+              <strong>{{ item.title }}</strong> - 
+              {{ item.text }}
+              <a href="{{ item.link_url }}" target="_blank">{{ item.link_text }}</a>
+              {{ item.extra }}
+              <a href="{{ item.extra_link_url }}" target="_blank">{{ item.extra_link_text }}</a>
+            </div>
+
+        </li>
+      {% endfor %}
     </ul>
   </div>
 </section>
