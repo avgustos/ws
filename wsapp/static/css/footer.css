@@ -1,0 +1,22 @@
+/* =====================
+   Footer Styles
+   ===================== */
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding: 0.5rem 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.footer a {
+  color: #ffc107;
+  text-decoration: none;
+  margin-left: 1rem;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}

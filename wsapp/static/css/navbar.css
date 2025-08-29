@@ -1,0 +1,129 @@
+/* =====================
+   Navbar Styles
+   ===================== */
+
+/* Navbar container */
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Brand */
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  color: white;
+  text-decoration: none;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+/* Links */
+.navbar-nav .nav-link {
+  padding: 0.5rem 0.75rem;
+  color: white;
+  text-decoration: none;
+  font-weight: normal;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+  text-decoration: underline;
+  text-decoration-color: red;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 10px;
+}
+
+/* Language selector */
+.navbar-nav .dropdown-toggle.nav-link {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 0.75rem;
+  color: #ffc107 !important;
+  background-color: transparent !important;
+}
+
+.navbar-nav .dropdown-toggle img {
+  margin-right: 0.5rem;
+}
+
+.dropdown-menu {
+  background-color: #343a40 !important;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.dropdown-item {
+  color: #f8f9fa !important;
+}
+
+.dropdown-item:hover {
+  background-color: #495057 !important;
+  color: #fff !important;
+}
+
+/* Hamburger */
+.navbar-toggler-custom {
+  border: none;
+  background: transparent;
+  padding: 0.25rem 0.5rem;
+  position: relative;
+  width: 30px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  outline: none;
+  box-shadow: none;
+}
+
+/* Remove border/frame/outline on hamburger when clicked or focused */
+.navbar-toggler-custom {
+  border: none !important;
+  background: transparent !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+/* Subtle accessibility indicator */
+.navbar-toggler-custom:focus,
+.navbar-toggler-custom:active {
+  outline: none !important;
+  background-color: rgba(231, 76, 60, 0.3) !important; /* subtle red */
+  color: #fff !important;                                /* icon readable */
+  border: none !important;                               /* no frame */
+  border-radius: 6px;
+  box-shadow: 0 0 6px 1px rgba(231, 76, 60, 0.3) !important; /* soft subtle glow */
+  transition: all 0.2s ease-in-out;
+}
+
+
+.navbar-toggler-custom .toggler-icon,
+.navbar-toggler-custom .toggler-icon::before,
+.navbar-toggler-custom .toggler-icon::after {
+  display: block;
+  background-color: white;
+  height: 3px;
+  width: 100%;
+  border-radius: 2px;
+  position: absolute;
+  transition: all 0.3s ease-in-out;
+}
+
+.navbar-toggler-custom .toggler-icon { top: 50%; transform: translateY(-50%); }
+.navbar-toggler-custom .toggler-icon::before { content: ''; top: -8px; }
+.navbar-toggler-custom .toggler-icon::after  { content: ''; top: 8px; }
+
+.navbar-toggler-custom:not(.collapsed) .toggler-icon { background-color: transparent; }
+.navbar-toggler-custom:not(.collapsed) .toggler-icon::before {
+  transform: rotate(45deg);
+  top: 0;
+}
+.navbar-toggler-custom:not(.collapsed) .toggler-icon::after {
+  transform: rotate(-45deg);
+  top: 0;
+}

@@ -1,152 +1,50 @@
-/* =============
-   Base & Layout
-   ============= */
-body {
+/* =====================
+   Base Styles (Global)
+   ===================== */
+
+/* General reset & body */
+html, body {
   background-color: #f8f9fa;
+  font-family: "Inter", system-ui, sans-serif;
+  color: #212529; /* Bootstrap body text color */
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
 }
 
+/* Main container for all pages */
 .container {
-  margin-top: 20px;
+  max-width: 1100px;
+  margin: 20px auto;
+  padding: 0 1rem;
 }
 
-/* =====================
-   Navbar General Styles
-   ===================== */
-.navbar {
-  display: flex;
-  justify-content: center;   /* center nav links horizontally */
-  align-items: center;       /* vertical alignment */
-  gap: 2rem;
-  padding: 0;
-  background-color: rgba(0, 0, 0, 0.5); /* semi-transparent dark */
+/* Headings (smaller than Bootstrap defaults) */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  color: #111827; /* near-black */
+  margin-top: 0;
+  margin-bottom: 1rem;
+  line-height: 1.2;
 }
 
-/* Navbar brand */
-.navbar-brand {
-  display: flex;
-  align-items: center;      /* vertical center */
-  padding: 0.5rem 1rem;
-  color: white;
+h1 { font-size: 1.875rem; } /* ~30px */
+h2 { font-size: 1.5rem; }   /* ~24px */
+h3 { font-size: 1.25rem; }  /* ~20px */
+
+/* Paragraphs */
+p {
+  margin-bottom: 1rem;
+}
+
+/* Links */
+a {
+  color: #1d4ed8;
   text-decoration: none;
-  font-size: 1.25rem;
-  font-weight: bold;
+  transition: color 0.2s ease;
 }
 
-/* Navbar links */
-.navbar-nav .nav-link {
-  color: white;
-  padding: 0.5rem 0.75rem;
-  text-decoration: none;
-  font-weight: normal;
-}
-
-.navbar-nav .nav-link:hover,
-.navbar-nav .nav-link.active {
-  text-decoration: underline;
-  text-decoration-color: red;
-  text-decoration-thickness: 1px;
-  text-underline-offset: 10px;
-}
-
-/* =====================
-   Language Selector
-   ===================== */
-.navbar-nav .dropdown-toggle.nav-link {
-  display: flex;
-  align-items: center;
-  padding: 0.5rem 0.75rem;
-  color: #ffc107 !important;          /* yellow */
-  background-color: transparent !important;
-  font-weight: normal;
-}
-
-.navbar-nav .dropdown-toggle.nav-link:hover,
-.navbar-nav .dropdown-toggle.nav-link:focus {
-  color: #ffc107 !important;
-  background-color: transparent !important;
-}
-
-/* Space between flag and text */
-.navbar-nav .dropdown-toggle img {
-  margin-right: 0.5rem;
-}
-
-/* Dropdown menu */
-.dropdown-menu {
-  background-color: #343a40 !important; /* dark */
-  border: 1px solid rgba(255, 255, 255, 0.15);
-}
-
-.dropdown-item {
-  color: #f8f9fa !important;
-}
-
-.dropdown-item:hover {
-  background-color: #495057 !important; /* slightly lighter gray */
-  color: #fff !important;
-}
-
-/* =====================
-   Hamburger Button
-   ===================== */
-.navbar-toggler-custom {
-  border: none;
-  background: transparent;
-  padding: 0.25rem 0.5rem;
-  position: relative;
-  width: 30px;
-  height: 24px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  outline: none;
-  box-shadow: none;
-}
-
-.navbar-toggler-custom .toggler-icon,
-.navbar-toggler-custom .toggler-icon::before,
-.navbar-toggler-custom .toggler-icon::after {
-  display: block;
-  background-color: white;  /* line color */
-  height: 3px;
-  width: 100%;
-  border-radius: 2px;
-  position: absolute;
-  transition: all 0.3s ease-in-out;
-}
-
-.navbar-toggler-custom .toggler-icon { top: 50%; transform: translateY(-50%); }
-.navbar-toggler-custom .toggler-icon::before { content: ''; top: -8px; }
-.navbar-toggler-custom .toggler-icon::after  { content: ''; top: 8px; }
-
-.navbar-toggler-custom:not(.collapsed) .toggler-icon { background-color: transparent; }
-.navbar-toggler-custom:not(.collapsed) .toggler-icon::before {
-  transform: rotate(45deg);
-  top: 0;
-}
-.navbar-toggler-custom:not(.collapsed) .toggler-icon::after {
-  transform: rotate(-45deg);
-  top: 0;
-}
-
-/* =====================
-   Footer
-   ===================== */
-.footer {
-  display: flex;
-  justify-content: center;   /* center nav links horizontally */
-  align-items: center;       /* vertical alignment */
-  gap: 2rem;
-  padding: 0;
-  background-color: rgba(0, 0, 0, 0.5);
-}
-
-.footer a {
-  color: #ffc107; /* gold link */
-  text-decoration: none;
-  margin-left: 1rem;
-}
-
-.footer a:hover {
+a:hover {
+  color: #1e40af;
   text-decoration: underline;
 }
