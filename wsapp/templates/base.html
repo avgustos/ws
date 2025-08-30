@@ -46,10 +46,25 @@
   
     <!-- Page content (flex-grow fills the space between navbar and footer) -->
     <main class="flex-grow-1">
-    
-    {% block content %}
 
-    {% endblock content %}
+        {% with messages = get_flashed_messages(with_categories=true) %}
+  {% if messages %}
+    <div class="flash-messages">
+      {% for category, message in messages %}
+        <div class="alert alert-{{ category }}">
+          {{ message }}
+          <button type="button" class="close-btn" onclick="this.parentElement.style.display='none';">&times;</button>
+        </div>
+      {% endfor %}
+    </div>
+  {% endif %}
+{% endwith %}
+
+
+    
+        {% block content %}
+
+        {% endblock content %}
 
     </main>
 

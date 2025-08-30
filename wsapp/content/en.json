@@ -315,6 +315,12 @@
   },
 
 
+  "contact_messages": {
+  "success": "Your message has been sent successfully!",
+  "error": "There was an error sending your message. Please try again later."
+},
+
+
   "privacy_policy": {
     "title": "Privacy Policy",
     "heading": "Personal Data Protection Policy",

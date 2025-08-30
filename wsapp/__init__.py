@@ -2,7 +2,10 @@
 
 import os
 from flask import Flask, session
+from flask_mail import Mail
 from datetime import datetime
+
+mail = Mail()
 
 def create_app(test_config=None):
     # create and configure the app
@@ -30,6 +33,18 @@ def create_app(test_config=None):
         os.makedirs(app.instance_path)
     except OSError:
         pass
+
+    # Flask-Mail configuration
+    app.config.update(
+    MAIL_SERVER='smtp.mail.yahoo.com',
+    MAIL_PORT=587,
+    MAIL_USE_TLS=True,
+    MAIL_USERNAME='g.mavridis@yahoo.gr',       # your Yahoo email
+    MAIL_PASSWORD='ozdbfilanljhavra',   # app password, NOT your normal password
+    MAIL_DEFAULT_SENDER=('George Mavridis', 'g.mavridis@yahoo.gr')
+    )
+
+    mail.init_app(app)
 
     # ---- LANGUAGE SESSION HANDLER ----
     @app.before_request

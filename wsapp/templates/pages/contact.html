@@ -58,28 +58,18 @@
 
     <!-- Contact Form Card -->
     <div class="form-card">
-      <form action="https://formsubmit.co/YOUR-ALIAS-HERE" method="POST">
-        <!-- Hidden options -->
-        <input type="hidden" name="_captcha" value="false">
-        <input type="hidden" name="_template" value="table">
-        <input type="hidden" name="_next" value="{{ url_for('main.index') }}">
-        <input type="text" name="_honey" style="display:none">
+      <form action="{{ url_for('main.contact') }}" method="POST">
+  <label for="input-name">{{ content.form.name.label }}</label>
+  <input type="text" id="input-name" name="name" placeholder="{{ content.form.name.placeholder }}" required>
 
-        <!-- Name -->
-        <label for="input-name">{{ content.form.name.label }}</label>
-        <input type="text" id="input-name" name="name" placeholder="{{ content.form.name.placeholder }}" required>
+  <label for="input-email">{{ content.form.email.label }}</label>
+  <input type="email" id="input-email" name="email" placeholder="{{ content.form.email.placeholder }}" required>
 
-        <!-- Email -->
-        <label for="input-email">{{ content.form.email.label }}</label>
-        <input type="email" id="input-email" name="email" placeholder="{{ content.form.email.placeholder }}" required>
+  <label for="input-message">{{ content.form.message.label }}</label>
+  <textarea id="input-message" name="message" placeholder="{{ content.form.message.placeholder }}" rows="4" required></textarea>
 
-        <!-- Message -->
-        <label for="input-message">{{ content.form.message.label }}</label>
-        <textarea id="input-message" name="message" rows="4" placeholder="{{ content.form.message.placeholder }}" required></textarea>
-
-        <!-- Submit Button -->
-        <button type="submit">{{ content.form.button }}</button>
-      </form>
+  <button type="submit">{{ content.form.button }}</button>
+</form>
     </div>
 
   </div>

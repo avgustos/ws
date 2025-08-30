@@ -39,30 +39,10 @@
   box-shadow: 0 4px 10px rgba(0,0,0,0.08);
 }
 
-/* Info row: flex container */
-.info-row {
-  display: flex;
-  align-items: flex-start; /* aligns icon with first text line */
-  gap: 1rem; /* spacing between icon and text */
-}
-
-/* Icon circle */
-.icon-circle {
-  flex-shrink: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 3rem;
-  height: 3rem;
-  border-radius: 50%;
-  background-color: #e0f2fe;
-  color: #1d4ed8;
-  font-size: 1.25rem;
-}
-
-/* Text block */
+/* Service text */
 .service-text {
-  flex: 1; /* takes remaining space */
+  font-size: 1rem;
+  line-height: 1.5;
 }
 
 .service-text strong {
@@ -70,10 +50,4 @@
   font-weight: 600;
   margin-bottom: 0.25rem;
   color: #111827;
-}
-
-.service-text p {
-  margin: 0 0 0.5rem 0;
-  font-size: 1rem;
-  line-height: 1.5;
 }
