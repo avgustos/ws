@@ -32,23 +32,193 @@
 
   
   "corporate": {
-    "title": "Corporate Insurance Services",
-    "items": [
-      { "icon": "fa-solid fa-building", "title": "Property Insurance", "text": "Secure your business assets against fire, theft, vandalism, and natural disasters. Commercial property insurance ensures your building, equipment, and inventory are protected—minimizing downtime and financial loss after unexpected events." },
-      { "icon": "fa-solid fa-business-time", "title": "Business Interruption Insurance", "text": "When operations stop, bills don’t. Business interruption insurance helps cover lost income, rent, and employee wages during unexpected closures—keeping your business afloat while you recover." },
-      { "icon": "fa-solid fa-truck-moving", "title": "Commercial Auto Insurance", "text": "If your business uses vehicles, protect them and your team. Commercial auto insurance covers accidents, theft, and liability—keeping your operations moving smoothly and legally." },
-      { "icon": "fa-solid fa-shield-halved", "title": "General Liability Insurance", "text": "Protect your business from costly lawsuits due to third-party injuries, property damage, or personal injury claims. General liability insurance is essential for any business that interacts with clients or the public—safeguarding your reputation and finances." },
-      { "icon": "fa-solid fa-pen-nib", "title": "Professional Liability Insurance (Errors & Omissions)", "text": "Even experts make mistakes. Professional liability insurance covers claims of negligence, errors, or omissions in your services—crucial for consultants, freelancers, and service-based businesses." },
-      { "icon": "fa-solid fa-tag", "title": "Product Liability Insurance", "text": "Selling products? You need this. Product liability insurance covers legal and medical costs if your product causes harm—protecting your finances and brand from potential lawsuits." },
-      { "icon": "fa-solid fa-people-group", "title": "Employment Practices Liability Insurance (EPLI)", "text": "Don’t let an HR issue derail your business. EPLI covers claims like wrongful termination, discrimination, or harassment—essential protection as your team grows." },
-      { "icon": "fa-solid fa-truck-medical", "title": "Workers’ Compensation Insurance", "text": "Protect your team and your company. Workers’ compensation covers medical bills and lost wages if an employee gets injured at work—ensuring compliance and reducing the risk of lawsuits." },
-      { "icon": "fa-solid fa-stethoscope", "title": "Group Health Insurance", "text": "Provides medical coverage for your employees and their families, enhancing their sense of security and well-being in the workplace. The coverage may include hospitalization costs, diagnostic tests, and preventive check-ups, making it a valuable tool for attracting and retaining talented personnel." },
-      { "icon": "fa-solid fa-briefcase", "title": "Directors and Officers (D&O) Insurance", "text": "Shield your leadership team from personal financial loss due to decisions made in their roles. D&O insurance protects your business’s key people from lawsuits over mismanagement or breach of duty." },
-      { "icon": "fa-solid fa-user-tie", "title": "Key Person Insurance", "text": "Safeguard your company’s future. Key person insurance provides a financial safety net if a critical employee or founder dies or becomes disabled—helping your business stay stable in uncertain times." },
-      { "icon": "fa-solid fa-lock", "title": "Cyber Liability Insurance", "text": "One data breach can devastate your business. Cyber liability insurance covers the costs of cyberattacks, data breaches, and IT failures—ideal for companies handling sensitive or digital information." },
-      { "icon": "fa-solid fa-scale-balanced", "title": "Legal Protection Insurance", "text": "Covers legal expenses and representation for your business in case of disputes with suppliers, customers, employees, or public authorities. It ensures that you can defend your interests without the burden of unexpected legal costs." }
-    ]
-  },
+  "title": "Corporate Insurance Services",
+  "items": [
+    {
+      "icon": "fa-solid fa-building",
+      "title": "Property Insurance",
+      "paragraphs": [
+        {
+          "parts": [
+            {
+              "type": "text",
+              "content": "Secure your business assets against fire, theft, vandalism, and natural disasters. Commercial property insurance ensures your building, equipment, and inventory are protected—minimizing downtime and financial loss after unexpected events."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "icon": "fa-solid fa-business-time",
+      "title": "Business Interruption Insurance",
+      "paragraphs": [
+        {
+          "parts": [
+            {
+              "type": "text",
+              "content": "When operations stop, bills don’t. Business interruption insurance helps cover lost income, rent, and employee wages during unexpected closures—keeping your business afloat while you recover."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "icon": "fa-solid fa-truck-moving",
+      "title": "Commercial Auto Insurance",
+      "paragraphs": [
+        {
+          "parts": [
+            {
+              "type": "text",
+              "content": "If your business uses vehicles, protect them and your team. Commercial auto insurance covers accidents, theft, and liability—keeping your operations moving smoothly and legally."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "icon": "fa-solid fa-shield-halved",
+      "title": "General Liability Insurance",
+      "paragraphs": [
+        {
+          "parts": [
+            {
+              "type": "text",
+              "content": "Protect your business from costly lawsuits due to third-party injuries, property damage, or personal injury claims. General liability insurance is essential for any business that interacts with clients or the public—safeguarding your reputation and finances."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "icon": "fa-solid fa-pen-nib",
+      "title": "Professional Liability Insurance (Errors & Omissions)",
+      "paragraphs": [
+        {
+          "parts": [
+            {
+              "type": "text",
+              "content": "Even experts make mistakes. Professional liability insurance covers claims of negligence, errors, or omissions in your services—crucial for consultants, freelancers, and service-based businesses."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "icon": "fa-solid fa-tag",
+      "title": "Product Liability Insurance",
+      "paragraphs": [
+        {
+          "parts": [
+            {
+              "type": "text",
+              "content": "Selling products? You need this. Product liability insurance covers legal and medical costs if your product causes harm—protecting your finances and brand from potential lawsuits."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "icon": "fa-solid fa-people-group",
+      "title": "Employment Practices Liability Insurance (EPLI)",
+      "paragraphs": [
+        {
+          "parts": [
+            {
+              "type": "text",
+              "content": "Don’t let an HR issue derail your business. EPLI covers claims like wrongful termination, discrimination, or harassment—essential protection as your team grows."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "icon": "fa-solid fa-truck-medical",
+      "title": "Workers’ Compensation Insurance",
+      "paragraphs": [
+        {
+          "parts": [
+            {
+              "type": "text",
+              "content": "Protect your team and your company. Workers’ compensation covers medical bills and lost wages if an employee gets injured at work—ensuring compliance and reducing the risk of lawsuits."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "icon": "fa-solid fa-stethoscope",
+      "title": "Group Health Insurance",
+      "paragraphs": [
+        {
+          "parts": [
+            {
+              "type": "text",
+              "content": "Provides medical coverage for your employees and their families, enhancing their sense of security and well-being in the workplace. The coverage may include hospitalization costs, diagnostic tests, and preventive check-ups, making it a valuable tool for attracting and retaining talented personnel."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "icon": "fa-solid fa-briefcase",
+      "title": "Directors and Officers (D&O) Insurance",
+      "paragraphs": [
+        {
+          "parts": [
+            {
+              "type": "text",
+              "content": "Shield your leadership team from personal financial loss due to decisions made in their roles. D&O insurance protects your business’s key people from lawsuits over mismanagement or breach of duty."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "icon": "fa-solid fa-user-tie",
+      "title": "Key Person Insurance",
+      "paragraphs": [
+        {
+          "parts": [
+            {
+              "type": "text",
+              "content": "Safeguard your company’s future. Key person insurance provides a financial safety net if a critical employee or founder dies or becomes disabled—helping your business stay stable in uncertain times."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "icon": "fa-solid fa-lock",
+      "title": "Cyber Liability Insurance",
+      "paragraphs": [
+        {
+          "parts": [
+            {
+              "type": "text",
+              "content": "One data breach can devastate your business. Cyber liability insurance covers the costs of cyberattacks, data breaches, and IT failures—ideal for companies handling sensitive or digital information."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "icon": "fa-solid fa-scale-balanced",
+      "title": "Legal Protection Insurance",
+      "paragraphs": [
+        {
+          "parts": [
+            {
+              "type": "text",
+              "content": "Covers legal expenses and representation for your business in case of disputes with suppliers, customers, employees, or public authorities. It ensures that you can defend your interests without the burden of unexpected legal costs."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
+,
 
 
   "private": {

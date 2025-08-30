@@ -7,41 +7,56 @@
 {% block content %}
 <section class="contact" id="contact">
   <div class="container">
+
+    <!-- Page Title -->
     <h2>{{ content.title }}</h2>
 
     <!-- Office Card -->
     <div class="info-item">
+  <div class="info-row">
     <span class="icon-circle"><i class="fas fa-map-marker-alt"></i></span>
     <div class="office-text">
-        <strong>{{ content.office_name }}</strong>
-        <p>{{ content.office_address }}</p>
+      <strong>{{ content.office_name }}</strong>
+      <p>{{ content.office_address }}</p>
     </div>
-    </div>
+  </div>
+</div>
 
 
-    <!-- Contact Info -->
+    <!-- Contact Info Cards -->
     <div class="contact-info">
-      <div class="info-item">
-        <span class="icon-circle"><i class="fas fa-phone"></i></span>
-        <p>
-          {% for p in content.phones %}
-            <a href="{{ p.href }}">{{ p.label }}</a>{% if not loop.last %}, {% endif %}
-          {% endfor %}
-        </p>
-      </div>
 
+      <!-- Phone -->
       <div class="info-item">
+  <div class="info-row">
+    <span class="icon-circle"><i class="fas fa-phone"></i></span>
+    <p>
+      {% for p in content.phones %}
+        <a href="{{ p.href }}">{{ p.label }}</a>{% if not loop.last %}, {% endif %}
+      {% endfor %}
+    </p>
+  </div>
+</div>
+
+
+      <!-- Email -->
+      <div class="info-item">
+        <div class="info-row">
         <span class="icon-circle"><i class="fas fa-envelope"></i></span>
         <p><a href="{{ content.email.href }}">{{ content.email.label }}</a></p>
+        </div>
       </div>
 
+      <!-- Availability -->
       <div class="info-item">
+        <div class="info-row">
         <span class="icon-circle"><i class="fas fa-comments"></i></span>
         <p>{{ content.availability }}</p>
       </div>
+      </div>
     </div>
 
-    <!-- Contact Form (one big card) -->
+    <!-- Contact Form Card -->
     <div class="form-card">
       <form action="https://formsubmit.co/YOUR-ALIAS-HERE" method="POST">
         <!-- Hidden options -->
@@ -50,18 +65,23 @@
         <input type="hidden" name="_next" value="{{ url_for('main.index') }}">
         <input type="text" name="_honey" style="display:none">
 
+        <!-- Name -->
         <label for="input-name">{{ content.form.name.label }}</label>
         <input type="text" id="input-name" name="name" placeholder="{{ content.form.name.placeholder }}" required>
 
+        <!-- Email -->
         <label for="input-email">{{ content.form.email.label }}</label>
         <input type="email" id="input-email" name="email" placeholder="{{ content.form.email.placeholder }}" required>
 
+        <!-- Message -->
         <label for="input-message">{{ content.form.message.label }}</label>
         <textarea id="input-message" name="message" rows="4" placeholder="{{ content.form.message.placeholder }}" required></textarea>
 
+        <!-- Submit Button -->
         <button type="submit">{{ content.form.button }}</button>
       </form>
     </div>
+
   </div>
 </section>
 {% endblock content %}

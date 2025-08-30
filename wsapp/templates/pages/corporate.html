@@ -1,27 +1,44 @@
-{% extends "/base.html" %}
-
+{% extends "base.html" %}
 
 {% block styles %}
-<link rel="stylesheet" href="{{ url_for('static', filename='css/corporate.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/corporate.css') }}">
 {% endblock %}
-
 
 {% block content %}
 <section class="corporate-services">
   <div class="container">
+
+    <!-- Page Title -->
     <h2>{{ content.title }}</h2>
+
+    <!-- Services List -->
     <ul class="services-list">
       {% for item in content["items"] %}
-        <li>
-            <span class="icon-circle">
-            <i class="{{ item.icon }}"></i>
-            </span>
-            <div class="service-text">
-            <strong>{{ item.title }}</strong> – {{ item.text }}
-            </div>
-        </li>
-      {% endfor %}
+  <li>
+    <div class="info-row">
+      <span class="icon-circle">
+        <i class="{{ item.icon }}"></i>
+      </span>
+      <div class="service-text">
+        <strong>{{ item.title }}</strong>
+        {% for para in item.paragraphs %}
+          <p>
+            {% for part in para.parts %}
+              {% if part.type == "text" %}
+                {{ part.content }}
+              {% elif part.type == "link" %}
+                <a href="{{ part.url }}" target="_blank">{{ part.text }}</a>
+              {% endif %}
+            {% endfor %}
+          </p>
+        {% endfor %}
+      </div>
+    </div>
+  </li>
+{% endfor %}
+
     </ul>
+
   </div>
 </section>
 {% endblock %}

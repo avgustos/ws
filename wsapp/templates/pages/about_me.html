@@ -1,17 +1,27 @@
-{% extends "/base.html" %}
+{% extends "base.html" %}
 
-
-{% block title %}
-    {{ content.title }}
-{% endblock title %}
-
+{% block styles %}
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/about_me.css') }}">
+{% endblock %}
 
 {% block content %}
+<section class="about-me">
+  <div class="container">
 
-    <h3>{{ content.heading }}</h3>
+    <!-- Page Title -->
+    <h2>{{ content.title }}</h2>
 
-    {% for paragraph in content.paragraphs %}
-        <p>{{ paragraph }}</p>
-    {% endfor %}
+    <!-- Single Card for Paragraphs -->
+    <div class="info-card">
+      {% for paragraph in content.paragraphs %}
+        {% if loop.first %}
+          <p class="first-paragraph">{{ paragraph }}</p>
+        {% else %}
+          <p>{{ paragraph }}</p>
+        {% endif %}
+      {% endfor %}
+    </div>
 
+  </div>
+</section>
 {% endblock content %}

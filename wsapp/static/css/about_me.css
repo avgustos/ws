@@ -1,0 +1,24 @@
+/* About Me Page Styles */
+.about-me {
+  padding: 4rem 1rem;
+  background: #f9fafb;
+}
+
+.about-me .container {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* Page Title */
+.about-me h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #111827;
+}
+
+/* First paragraph bold */
+.info-card p.first-paragraph {
+  font-weight: 700;
+}

@@ -1,9 +1,7 @@
 /* Corporate Page Styles */
 .corporate-services {
   padding: 4rem 1rem;
-  background: #f9fafb; /* light neutral background */
-  font-family: "Inter", system-ui, sans-serif;
-  color: #1f2937; /* slate-800 */
+  background: #f9fafb;
 }
 
 .corporate-services .container {
@@ -17,7 +15,7 @@
   font-weight: 700;
   text-align: center;
   margin-bottom: 2.5rem;
-  color: #111827; /* slate-900 */
+  color: #111827;
 }
 
 /* Service list */
@@ -28,8 +26,6 @@
 }
 
 .services-list li {
-  display: flex;
-  align-items: flex-start;
   background: white;
   padding: 1.25rem;
   margin-bottom: 1rem;
@@ -43,25 +39,30 @@
   box-shadow: 0 4px 10px rgba(0,0,0,0.08);
 }
 
+/* Info row: flex container */
+.info-row {
+  display: flex;
+  align-items: flex-start; /* aligns icon with first text line */
+  gap: 1rem; /* spacing between icon and text */
+}
+
 /* Icon circle */
 .icon-circle {
-  background-color: #e0f2fe;  /* light blue */
-  color: #1d4ed8;            /* primary blue */
-  border-radius: 50%;
-  width: 3rem;
-  height: 3rem;
+  flex-shrink: 0;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-right: 1rem;
-  flex-shrink: 0;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  background-color: #e0f2fe;
+  color: #1d4ed8;
   font-size: 1.25rem;
 }
 
-/* Text */
+/* Text block */
 .service-text {
-  font-size: 1rem;
-  line-height: 1.5;
+  flex: 1; /* takes remaining space */
 }
 
 .service-text strong {
@@ -69,4 +70,10 @@
   font-weight: 600;
   margin-bottom: 0.25rem;
   color: #111827;
+}
+
+.service-text p {
+  margin: 0 0 0.5rem 0;
+  font-size: 1rem;
+  line-height: 1.5;
 }
