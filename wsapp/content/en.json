@@ -112,6 +112,38 @@
   },
 
 
+  "contact": {
+    "title": "Contact Me",
+    "office_name": "ALLIANZ",
+    "office_address": "Ηρώων Πολυτεχνείου 7-9, 18532, Πειραιάς",
+    "phoneLabel": "Phone",
+    "phones": [
+      { "label": "+30 210 7104910", "href": "tel:+302107104910" },
+      { "label": "+30 6932 266488", "href": "tel:+306932266488" }
+    ],
+    "emailLabel": "Email",
+    "email": {
+      "label": "g.mavridis@yahoo.gr",
+      "href": "mailto:g.mavridis@yahoo.gr"
+    },
+    "availability": "WhatsApp / Viber Available",
+    "form": {
+      "name": {
+        "label": "Name",
+        "placeholder": "Your Name"
+      },
+      "email": {
+        "label": "Email",
+        "placeholder": "Your Email"
+      },
+      "message": {
+        "label": "Message",
+        "placeholder": "Your Message"
+      },
+      "button": "Send Message"
+    }
+  },
+
 
   "privacy_policy": {
     "title": "Privacy Policy",
