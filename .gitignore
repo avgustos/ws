@@ -1,17 +1,37 @@
-# Virtual environment
-.venv/
 
 # Python cache
 __pycache__/
 *.pyc
 *.pyo
 *.pyd
+*$py.class
+
+# Byte-compiled files
+*.py[cod]
+
+# Pytest cache
+.pytest_cache/
+
+# PyInstaller
+dist/
+build/
+*.spec
+
+# pipenv / poetry files
+Pipfile.lock
+poetry.lock
+
+# Virtual environment
+.venv/
+.env
+env/
+venv/
 
 # Flask instance folder (contains database & secrets)
 instance/
 
-# VS Code settings (optional)
-.vscode/
+# Flask uploads (if you store uploaded files)
+uploads/
 
 # OS generated files
 .DS_Store
@@ -20,19 +40,21 @@ Thumbs.db
 # Logs
 *.log
 
-# Environment files
-.env
-
 # Database files (if you create any outside instance/)
 *.sqlite
 *.db
-
-# Byte-compiled files
-*.py[cod]
 
 # Coverage reports
 htmlcov/
 .coverage
 
-# Pytest cache
-.pytest_cache/
+# IDE/editor settings
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Byte-compiled / distribution / packaging
+*.egg-info/
+*.egg
+*.whl
