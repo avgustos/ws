@@ -363,23 +363,31 @@
 
 
   "cookies_policy": {
-    "title": "Cookies Policy",
-    "effective_date": "Effective Date: August 1, 2025",
-    "sections": [
-      {
-        "title": "1. Introduction",
-        "body": "This Cookies Policy explains what cookies are, how our website uses them, and the options you have to manage them.\n\nCookies are small text files stored on your computer or mobile device when you visit a website. They help the site remember your actions and preferences."
-      },
-      {
-        "title": "2. Types of Cookies We Use",
-        "body": "At this time, our website uses only **analytics cookies**:\n\n- **Analytics cookies (Google Analytics):** Collect anonymized information about site use.\n- Help us improve performance and content.\n\nWe do *not* use cookies for advertising or tracking across sites."
-      },
-      {
-        "title": "3. Managing Cookies",
-        "body": "You are in control of your cookies:\n\n1. **Consent via banner** – Accept or reject cookies when first visiting.\n2. **Withdraw consent** – Delete cookies in your browser settings.\n3. **Browser guides:**\n   - [Chrome](https://support.google.com/chrome/answer/95647)\n   - [Firefox](https://support.mozilla.org/en-US/kb/delete-cookies-remove-info-websites-stored)\n   - [Safari](https://support.apple.com/guide/safari/manage-cookies-and-website-data-sfri11471/mac)\n   - [Edge](https://support.microsoft.com/microsoft-edge/delete-cookies-in-microsoft-edge-63947406-40ac-c3b8-57b9-2a946a29ae09)"
-      }
-    ]
-  },
+  "title": "Cookies Policy",
+  "effective_date": "Effective Date: August 01, 2025",
+  "sections": [
+    {
+      "title": "1. Introduction",
+      "body": "This Cookies Policy explains what cookies are, how they are used on our website, and what choices you have for managing them.\n\nCookies are small text files stored on your computer or mobile device when you visit a website. They help the site remember your actions and preferences."
+    },
+    {
+      "title": "2. Types of Cookies We Use",
+      "body": "Our website currently uses only **analytics cookies**:\n\n- **Analytics cookies (Google Analytics):** Collect anonymous information about how visitors use the website.\n- Help us improve performance and content.\n\nWe do **not** use cookies for advertising purposes or for tracking across other websites."
+    },
+    {
+      "title": "3. Google Analytics",
+      "body": "We use **Google Analytics**, a service provided by Google LLC, to better understand how our website is used.\n\n- **Purpose:** Measure traffic and performance.\n- **Data:** Anonymous usage information (no personal identification).\n- **Duration:** Cookies may remain on your device for up to 2 years, but are refreshed with each visit.\n- **Data transfer:** Information may be stored on Google servers outside the EU.\n- **IP anonymization:** IP addresses are anonymized within the EU before being sent to Google.\n\nLearn more: [Google Privacy Policy](https://policies.google.com/privacy)"
+    },
+    {
+      "title": "4. Managing Cookies and Consent",
+      "body": "You have full control over cookies:\n\n1. **Consent via banner** – Accept or reject cookies when you first visit the website.\n2. **Withdraw consent** – Delete cookies through your browser settings.\n3. **Browser settings:**\n   - [Chrome](https://support.google.com/chrome/answer/95647)\n   - [Firefox](https://support.mozilla.org/en-US/kb/delete-cookies-remove-info-websites-stored)\n   - [Safari](https://support.apple.com/guide/safari/manage-cookies-and-website-data-sfri11471/mac)\n   - [Edge](https://support.microsoft.com/microsoft-edge/delete-cookies-in-microsoft-edge-63947406-40ac-c3b8-57b9-2a946a29ae09)\n\nDisabling cookies will not block access to the website, but some features may not work as smoothly."
+    },
+    {
+      "title": "5. Updates to This Policy",
+      "body": "This Cookies Policy may be updated from time to time to reflect changes in technology, legal requirements, or our practices. Updates will be posted on this page with a new effective date."
+    }
+  ]
+},
 
   
 "footer": {

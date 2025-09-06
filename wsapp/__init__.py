@@ -61,8 +61,9 @@ def create_app(test_config=None):
     # Convert Markdown text to safe HTML.
         if value is None:
             return ""
-        # Convert Markdown → HTML
-        return Markup(markdown.markdown(value, extensions=["extra", "sane_lists"]))
+        return Markup(markdown.markdown(
+        value, extensions=["extra", "sane_lists", "tables"]
+    ))
     
     app.jinja_env.filters['markdown'] = markdown_to_html  # <-- THIS was missing
 
