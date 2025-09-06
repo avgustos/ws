@@ -19,6 +19,23 @@ html, body {
   padding: 0 1rem;
 }
 
+/* Jumbotron styling */
+.jumbotron-container {
+    width: 100%;
+    height: 200px;          /* fixed height */
+    overflow: hidden;       /* crop overflow */
+}
+
+.jumbotron-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;      /* scale & crop to fill container */
+    object-position: center;
+    display: block;
+    margin: 0 auto;       /* centers the image horizontally */
+}
+
+
 /* Headings (smaller than Bootstrap defaults) */
 h1, h2, h3, h4, h5, h6 {
   font-weight: 700;

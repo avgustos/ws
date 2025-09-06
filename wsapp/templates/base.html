@@ -1,80 +1,87 @@
 <!DOCTYPE html>
-<html> 
+<html lang="en"> <!-- Change to "el" for Greek pages -->
 
 <head>
-    
+    <!-- Essential meta -->
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Professional insurance services in Greece.">
+    <meta name="keywords" content="insurance, Greece, health insurance, car insurance">
+    <meta name="author" content="George Mavridis">
+
+    <!-- Open Graph (social sharing) -->
+    <meta property="og:title" content="Professional Insurance Services in Greece">
+    <meta property="og:description" content="Reliable insurance services tailored to your needs.">
+    <meta property="og:image" content="{{ url_for('static', filename='images/jumbotron.jpg') }}">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="{{ request.url }}">
+
     <title>
         {% block title %}
-        {% endblock title%}
+        {% endblock title %}
     </title>
 
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap CSS (latest stable) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Base Styles CSS -->
+    <!-- Base Styles -->
     <link rel="stylesheet" href="{{ url_for('static', filename='css/base.css') }}">
-
-    <!-- Navbar + Footer styles -->
     <link rel="stylesheet" href="{{ url_for('static', filename='css/navbar.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/footer.css') }}">
 
     {% block styles %}{% endblock %}
 
-    <!-- Flags -->
+    <!-- Flag Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/6.6.6/css/flag-icons.min.css">
-    
-    <!-- G icon -->
+
+    <!-- Favicons (cross-device support) -->
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ url_for('static', filename='images/favicons/favicon-32x32.png') }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ url_for('static', filename='images/favicons/favicon-16x16.png') }}">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ url_for('static', filename='images/favicons/apple-touch-icon.png') }}">
+    <link rel="manifest" href="{{ url_for('static', filename='images/favicons/site.webmanifest') }}">
     <link rel="shortcut icon" href="{{ url_for('static', filename='images/favicons/favicon.ico') }}">
- 
-    <!-- FontAwesome icons -->
+
+    <!-- FontAwesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
-    <!-- Css / Flag Icons-->
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/flag-icons.min.css') }}">
-
-
 </head>
 
-<!-- Page content (flex-grow fills the space between navbar and footer) -->
 <body class="d-flex flex-column min-vh-100">
 
-    <img src="{{ url_for('static', filename='images/jumbotron.jpg') }}" width="100%" height="200px" class="img-responsive">
-
-    <!--by default, the function render_template (in routes.py) utilizes the template path relative to the templates/ folder-->
-    {% include "partials/navbar.html" %}
-  
-    <!-- Page content (flex-grow fills the space between navbar and footer) -->
-    <main class="flex-grow-1">
-
-        {% with messages = get_flashed_messages(with_categories=true) %}
-  {% if messages %}
-    <div class="flash-messages">
-      {% for category, message in messages %}
-        <div class="alert alert-{{ category }}">
-          {{ message }}
-          <button type="button" class="close-btn" onclick="this.parentElement.style.display='none';">&times;</button>
-        </div>
-      {% endfor %}
+    <!-- Banner / Jumbotron -->
+    <div class="jumbotron-container">
+        <img src="{{ url_for('static', filename='images/jumbotron.jpg') }}" 
+             alt="Insurance banner"
+             class="img-fluid jumbotron-img">
     </div>
-  {% endif %}
-{% endwith %}
 
+    <!-- Navbar -->
+    {% include "partials/navbar.html" %}
 
-    
+    <!-- Page content -->
+    <main class="flex-grow-1">
+        {% with messages = get_flashed_messages(with_categories=true) %}
+          {% if messages %}
+            <div class="flash-messages">
+              {% for category, message in messages %}
+                <div class="alert alert-{{ category }}">
+                  {{ message }}
+                  <button type="button" class="close-btn" onclick="this.parentElement.remove();">&times;</button>
+                </div>
+              {% endfor %}
+            </div>
+          {% endif %}
+        {% endwith %}
+
         {% block content %}
-
         {% endblock content %}
-
     </main>
 
-
+    <!-- Footer -->
     {% include "partials/footer.html" %}
 
-
-    <!-- Bootstrap JS (for responsive navbar toggling) -->
+    <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    
 </body>
+
 
 </html>
