@@ -29,7 +29,8 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='css/navbar.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/footer.css') }}">
 
-    {% block styles %}{% endblock %}
+        {% block styles %}
+        {% endblock %}
 
     <!-- Flag Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/6.6.6/css/flag-icons.min.css">
@@ -43,7 +44,19 @@
 
     <!-- FontAwesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-0RFNCFVFCL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-0RFNCFVFCL', { 'debug_mode': true }); // keep { 'debug_mode': true } only while testing
+  </script>
+  <!-- End Google Analytics -->
 </head>
+
 
 <body class="d-flex flex-column min-vh-100">
 
