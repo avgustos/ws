@@ -1,8 +1,9 @@
 # wsapp/__init__.py
 
-import os
+import os, markdown
 from flask import Flask, session
 from flask_mail import Mail
+from markupsafe import Markup
 from datetime import datetime
 
 mail = Mail()
@@ -48,4 +49,22 @@ def create_app(test_config=None):
     from .routes import main
     app.register_blueprint(main)
 
+    # Add nl2br filter
+    def nl2br(value):
+        if value is None:
+            return ""
+        return Markup(value.replace("\n", "<br>"))
+    app.jinja_env.filters['nl2br'] = nl2br
+
+    
+    def markdown_to_html(value):
+    # Convert Markdown text to safe HTML.
+        if value is None:
+            return ""
+        # Convert Markdown → HTML
+        return Markup(markdown.markdown(value, extensions=["extra", "sane_lists"]))
+    
+    app.jinja_env.filters['markdown'] = markdown_to_html  # <-- THIS was missing
+
     return app
+

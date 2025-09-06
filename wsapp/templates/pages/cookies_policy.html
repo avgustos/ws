@@ -1,21 +1,18 @@
-{% extends "/base.html" %}
+{% extends "base.html" %}
 
-
-{% block title %}
-
-    {{ content.title }}
-    
-{% endblock title %}
-
-
-
+{% block head %}
+  {{ super() }}
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/cookies_policy.css') }}">
+{% endblock %}
 
 {% block content %}
+<div class="cookies-policy">
+  <h1>{{ content.title }}</h1>
+  <p><em>{{ content.effective_date }}</em></p>
 
-    <h3>{{ content.heading }}</h3>
-
-    {% for paragraph in content.paragraphs %}
-        <p>{{ paragraph }}</p>
-    {% endfor %}
-
-{% endblock content %}
+  {% for section in content.sections %}
+    <h2>{{ section.title }}</h2>
+    <div>{{ section.body | markdown }}</div>
+  {% endfor %}
+</div>
+{% endblock %}
