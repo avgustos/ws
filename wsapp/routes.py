@@ -34,6 +34,7 @@ def inject_globals():
         'privacy_policy': content['footer']['privacy_policy'],
         'cookies_policy': content['footer']['cookies_policy'],
         'navbar': content['navbar'],
+        'cookies': content['cookies'],   # <-- added this
         'current_year': datetime.now().year
     }
 

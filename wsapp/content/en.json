@@ -7,6 +7,15 @@
     "contact": {"label": "Contact", "url": "/pages/contact.html"}
   },
 
+
+  "cookies": {
+    "message": "This website uses cookies for analytics. Do you accept?",
+    "accept": "Accept",
+    "reject": "Reject",
+    "more_info": "Cookies Policy"
+  },
+
+
    "index": {
     "title": "Welcome to My Website",
     "paragraphs": [

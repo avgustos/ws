@@ -1,0 +1,72 @@
+/* Cookie Banner Styles */
+
+#cookie-banner {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #1f2937; /* Tailwind's gray-800 */
+  color: #fff;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 -2px 8px rgba(0,0,0,0.3);
+  z-index: 9999;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.5s ease-in-out;
+  font-family: system-ui, sans-serif;
+}
+
+#cookie-banner.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+#cookie-banner .btn {
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  border: none;
+}
+
+/* Accept button */
+#cookie-banner .btn-accept {
+  background-color: #2563eb; /* Tailwind's blue-600 */
+  color: #fff;
+}
+#cookie-banner .btn-accept:hover {
+  background-color: #1d4ed8; /* blue-700 */
+}
+
+/* Reject button */
+#cookie-banner .btn-reject {
+  background-color: transparent;
+  border: 2px solid #2563eb;
+  color: #2563eb;
+}
+#cookie-banner .btn-reject:hover {
+  background-color: #2563eb;
+  color: #fff;
+}
+
+#cookie-banner .actions {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+#cookie-banner .more-info {
+  font-size: 0.85rem;
+  color: #9ca3af; /* gray-400 */
+  text-decoration: underline;
+  transition: color 0.3s ease;
+}
+
+#cookie-banner .more-info:hover {
+  color: #ffffff;
+}
+
