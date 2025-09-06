@@ -1,0 +1,67 @@
+/* Shared Policy Page Styles */
+.policy-page {
+  padding: 4rem 1rem;
+  background: #f9fafb;
+}
+
+.policy-page .container {
+  max-width: 900px;
+  margin: 0 auto;
+  background: white;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+/* Title */
+.policy-page h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 0.5rem;
+  color: #111827;
+}
+
+/* Effective Date */
+.policy-page em {
+  display: block;
+  text-align: center;
+  color: #6b7280;
+  margin-bottom: 2rem;
+}
+
+/* Section Headings */
+.policy-page h2 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+  color: #111827;
+}
+
+/* Paragraphs and Lists */
+.policy-page p,
+.policy-page ul {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  color: #374151;
+}
+
+.policy-page ul {
+  list-style: disc inside;
+  padding-left: 1rem;
+}
+
+.policy-page li {
+  margin-bottom: 0.5rem;
+}
+
+/* Links */
+.policy-page a {
+  color: #2563eb;
+  text-decoration: underline;
+}
+.policy-page a:hover {
+  color: #1d4ed8;
+}

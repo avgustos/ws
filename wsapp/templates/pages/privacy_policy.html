@@ -1,21 +1,20 @@
-{% extends "/base.html" %}
+{% extends "base.html" %}
 
-
-{% block title %}
-
-    {{ content.title }}
-    
-{% endblock title %}
-
-
-
+{% block head %}
+  {{ super() }}
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/policy_pages.css') }}">
+{% endblock %}
 
 {% block content %}
+<div class="policy-page">
+  <div class="container">
+    <h1>{{ content.title }}</h1>
+    <p><em>{{ content.effective_date }}</em></p>
 
-    <h3>{{ content.heading }}</h3>
-
-    {% for paragraph in content.paragraphs %}
-        <p>{{ paragraph }}</p>
+    {% for section in content.sections %}
+      <h2>{{ section.title }}</h2>
+      <div>{{ section.body | markdown }}</div>
     {% endfor %}
-
-{% endblock content %}
+  </div>
+</div>
+{% endblock %}

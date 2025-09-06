@@ -331,15 +331,35 @@
 
 
   "privacy_policy": {
-    "title": "Privacy Policy",
-    "heading": "Personal Data Protection Policy",
-    "paragraphs": [
-      "This website collects personal data from users who fill out the contact form, including their name, email address, and message content. This information is used solely to respond to inquiries and is not shared with third parties.",
-      "We use Google Analytics to collect anonymous traffic data, such as page visits and device types, to better understand how users interact with the site. This data is anonymous and does not identify individual users.",
-      "By using this site, you agree to the collection and use of information in accordance with this policy.",
-      "If you have any questions or would like your data removed, please contact me through the contact form."
-    ]
-  },
+  "title": "Privacy Policy",
+  "effective_date": "Effective Date: August 01, 2025",
+  "sections": [
+    {
+      "title": "Introduction",
+      "body": "Your privacy is important. This Privacy Policy explains what personal data we collect, how we use it, and your rights under applicable data protection laws."
+    },
+    {
+      "title": "Data We Collect",
+      "body": "We may collect personal data that you provide directly, such as your name, email address, and message content when submitting the contact form.\n\nWe also use Google Analytics to collect anonymous usage data (e.g., page visits, device type, browser). This data is aggregated and cannot be used to identify individual users."
+    },
+    {
+      "title": "How We Use Your Data",
+      "body": "Your personal data is used only to:\n\n- Respond to inquiries submitted through the contact form\n- Improve the website’s functionality and user experience\n- Analyze traffic trends through Google Analytics\n\nWe do not sell, rent, or share your personal information with third parties."
+    },
+    {
+      "title": "Data Retention",
+      "body": "We retain your personal data only as long as necessary to fulfill the purposes described above or as required by law. Anonymous analytics data may be retained for longer periods for statistical purposes."
+    },
+    {
+      "title": "Your Rights",
+      "body": "You have the right to:\n\n- Request access to the personal data we hold about you\n- Request correction or deletion of your data\n- Withdraw consent to data processing (e.g., by rejecting cookies)\n\nTo exercise these rights, please contact us through the contact form."
+    },
+    {
+      "title": "Updates to This Policy",
+      "body": "This Privacy Policy may be updated from time to time to reflect changes in our practices, legal requirements, or technology. Updates will be posted on this page with a new effective date."
+    }
+  ]
+},
 
 
   "cookies_policy": {
