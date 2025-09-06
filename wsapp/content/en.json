@@ -329,6 +329,12 @@
   "error": "There was an error sending your message. Please try again later."
 },
 
+  "policies": [
+    { "key": "privacy_policy", "label": "Privacy Policy" },
+    { "key": "cookies_policy", "label": "Cookies Policy" },
+    { "key": "terms_of_service", "label": "Terms of Service" }
+  ],
+
 
   "privacy_policy": {
   "title": "Privacy Policy",
@@ -389,10 +395,47 @@
   ]
 },
 
-  
+"terms_of_service": {
+  "title": "Terms of Service",
+  "effective_date": "Effective Date: August 1, 2025",
+  "sections": [
+    {
+      "title": "1. Acceptance of Terms",
+      "body": "By accessing and using this website, you agree to be bound by these Terms of Service. If you do not agree, please refrain from using the website."
+    },
+    {
+      "title": "2. Use of the Website",
+      "body": "You agree to use this website only for lawful purposes and in a manner that does not infringe the rights of, restrict, or inhibit anyone else’s use of the site. Copying or redistributing content without permission is prohibited."
+    },
+    {
+      "title": "3. Intellectual Property",
+      "body": "All content on this website, including text, images, and design, is owned by George Mavridis unless otherwise stated. You may not reproduce or distribute it without prior written consent."
+    },
+    {
+      "title": "4. Disclaimers",
+      "body": "This website and its content are provided 'as is' without warranties of any kind. We do not guarantee uninterrupted access or that the content is free from errors."
+    },
+    {
+      "title": "5. Limitation of Liability",
+      "body": "To the fullest extent permitted by law, we shall not be liable for any damages arising from the use or inability to use this website."
+    },
+    {
+      "title": "6. External Links",
+      "body": "This website may contain links to third-party websites. We are not responsible for the content or practices of these external sites."
+    },
+    {
+      "title": "7. Changes to Terms",
+      "body": "We may update these Terms of Service from time to time. Updates will be posted on this page with a new effective date."
+    }
+  ]
+},
+
 "footer": {
   "about_me": "George Mavridis - Insurance Agent",
-    "privacy_policy": "Privacy Policy",
-    "cookies_policy": "Cookies Policy"
+  "policies": [
+    { "key": "privacy_policy", "label": "Privacy Policy" },
+    { "key": "cookies_policy", "label": "Cookies Policy" },
+    { "key": "terms_of_service", "label": "Terms of Service" }
+  ]
 }
 }

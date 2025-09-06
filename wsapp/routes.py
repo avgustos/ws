@@ -29,14 +29,16 @@ def set_language(lang):
 def inject_globals():
     lang = session.get('lang', 'el')
     content = load_content(lang)
+
     return {
         'about_me': content['footer']['about_me'],
-        'privacy_policy': content['footer']['privacy_policy'],
-        'cookies_policy': content['footer']['cookies_policy'],
+        'policies': content['footer']['policies'],  # ✅ now comes straight from JSON
         'navbar': content['navbar'],
-        'cookies': content['cookies'],   # <-- added this
-        'current_year': datetime.now().year
+        'cookies': content.get('cookies', {}),  # safe if not always present
+        'current_year': datetime.now().year,
     }
+
+
 
 # ---- PAGES ----
 @main.route('/')
@@ -117,16 +119,22 @@ def contact():
     return render_template('pages/contact.html', content=content['contact'], navbar=content['navbar'])
 
 
-@main.route('/pages/privacy_policy')
-@main.route('/pages/privacy_policy.html')
-def privacy_policy():
+@main.route('/pages/<policy_name>')
+@main.route('/pages/<policy_name>.html')
+def policy(policy_name):
     lang = session.get('lang', 'el')
     content = load_content(lang)
-    return render_template('pages/privacy_policy.html', content=content['privacy_policy'], navbar=content['navbar'])
 
-@main.route('/pages/cookies_policy')
-@main.route('/pages/cookies_policy.html')
-def cookies_policy():
-    lang = session.get('lang', 'el')
-    content = load_content(lang)
-    return render_template('pages/cookies_policy.html', content=content['cookies_policy'], navbar=content['navbar'])
+    # Get valid policies dynamically from footer section
+    valid_policies = [p['key'] for p in content.get('footer', {}).get('policies', [])]
+
+    if policy_name not in valid_policies:
+        return "Page not found", 404
+
+    return render_template(
+        'pages/policy.html',
+        content=content[policy_name],
+        navbar=content['navbar']
+    )
+
+

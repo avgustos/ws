@@ -86,14 +86,7 @@
     {% include "partials/footer.html" %}
 
     <!-- Cookie Banner -->
-    <div id="cookie-banner">
-        <span>{{ cookies.message }}</span>
-        <div>
-          <button id="accept-cookies" class="btn btn-accept">{{ cookies.accept }}</button>
-          <button id="reject-cookies" class="btn btn-reject">{{ cookies.reject }}</button>
-          <a href="{{ url_for('main.cookies_policy') }}" class="more-info">{{ cookies.more_info }}</a>
-        </div>
-    </div>
+    {% include "partials/cookies_banner.html" %}
 
 
     <!-- Bootstrap JS -->

@@ -1,0 +1,10 @@
+<div id="cookie-banner">
+  <span class="message">{{ cookies.message }}</span>
+  
+  <div class="actions">
+    <button id="accept-cookies" class="btn btn-accept">{{ cookies.accept }}</button>
+    <button id="reject-cookies" class="btn btn-reject">{{ cookies.reject }}</button>
+  </div>
+  
+  <a href="{{ url_for('main.policy', policy_name='cookies_policy') }}" class="more-info">{{ cookies.more_info }}</a>
+</div>

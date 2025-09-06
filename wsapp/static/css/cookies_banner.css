@@ -5,11 +5,11 @@
   bottom: 0;
   left: 0;
   right: 0;
-  background: #1f2937; /* Tailwind's gray-800 */
+  background: #1f2937; /* gray-800 */
   color: #fff;
   padding: 1rem;
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr; /* 3 columns: message | buttons | more-info */
   align-items: center;
   box-shadow: 0 -2px 8px rgba(0,0,0,0.3);
   z-index: 9999;
@@ -24,6 +24,36 @@
   pointer-events: auto;
 }
 
+#cookie-banner .message {
+  justify-self: start;
+}
+
+/* Group buttons in the center */
+#cookie-banner .actions {
+  display: flex;
+  gap: 0.75rem;
+  justify-self: center; /* center column */
+}
+
+#cookie-banner .more-info {
+  font-size: 0.85rem;
+  color: #9ca3af; /* gray-400 */
+  text-decoration: underline;
+  justify-self: end;
+  transition: color 0.3s ease;
+}
+
+#cookie-banner .more-info:hover {
+  color: #ffffff;
+}
+
+/* Wrap message + buttons together */
+#cookie-banner .content {
+  display: flex;
+  align-items: center;
+  gap: 1rem; /* space between message and buttons */
+}
+
 #cookie-banner .btn {
   padding: 0.5rem 1rem;
   border-radius: 0.5rem;
@@ -33,19 +63,35 @@
   border: none;
 }
 
+/* Base button */
+#cookie-banner .btn {
+  padding: 0.4rem 0.9rem; /* slightly smaller */
+  border-radius: 0.4rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  border: 2px solid transparent; /* equal border for both */
+  line-height: 1.2;
+  min-width: 90px; /* ensures same width */
+  text-align: center;
+}
+
 /* Accept button */
 #cookie-banner .btn-accept {
-  background-color: #2563eb; /* Tailwind's blue-600 */
+  background-color: #2563eb; /* Tailwind blue-600 */
   color: #fff;
+  border-color: #2563eb;
 }
 #cookie-banner .btn-accept:hover {
   background-color: #1d4ed8; /* blue-700 */
+  border-color: #1d4ed8;
 }
 
 /* Reject button */
 #cookie-banner .btn-reject {
   background-color: transparent;
-  border: 2px solid #2563eb;
+  border-color: #2563eb;
   color: #2563eb;
 }
 #cookie-banner .btn-reject:hover {
@@ -53,20 +99,19 @@
   color: #fff;
 }
 
-#cookie-banner .actions {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-}
-
+/* More info link */
 #cookie-banner .more-info {
   font-size: 0.85rem;
   color: #9ca3af; /* gray-400 */
   text-decoration: underline;
   transition: color 0.3s ease;
 }
-
 #cookie-banner .more-info:hover {
   color: #ffffff;
 }
 
+#cookie-banner .actions {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}

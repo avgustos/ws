@@ -20,3 +20,18 @@
 .footer a:hover {
   text-decoration: underline;
 }
+
+.footer p {
+  margin: 0;
+}
+
+.footer .policy-link {
+  margin: 0;
+  padding: 0;
+}
+
+.footer .separator {
+  margin: 0 0.5rem; /* equal spacing left & right */
+  color: #aaa;      /* lighter grey for subtlety */
+}
+

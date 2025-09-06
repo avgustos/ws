@@ -1,13 +1,16 @@
-
 <footer class="footer bg-dark text-white text-center py-2 mt-auto">
   <div class="container-fluid">
-    <p class="mb-2">
-      &copy; {{ current_year }}
-      <a href="{{ url_for('main.about_me') }}" class="text-white me-4">{{ about_me }}</a>| 
-      <a href="{{ url_for('main.privacy_policy') }}" class="text-white me-4">{{ privacy_policy }}</a>|
-      <a href="{{ url_for('main.cookies_policy') }}" class="text-white">{{ cookies_policy }}</a>
+    <p class="mb-0 d-inline-flex align-items-center justify-content-center">
+      &copy; {{ current_year }} George Mavridis
+      <span class="separator">—</span>
+      {% for policy in policies %}
+        <a class="text-white text-decoration-none policy-link" href="{{ url_for('main.policy', policy_name=policy.key) }}">
+          {{ policy.label }}
+        </a>
+        {% if not loop.last %}
+          <span class="separator">|</span>
+        {% endif %}
+      {% endfor %}
     </p>
   </div>
 </footer>
-
-

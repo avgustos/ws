@@ -1,6 +1,6 @@
 # wsapp/__init__.py
 
-import os, markdown
+import os, markdown, json
 from flask import Flask, session
 from flask_mail import Mail
 from markupsafe import Markup
@@ -11,6 +11,18 @@ mail = Mail()
 def create_app(test_config=None):
     # create and configure the app
     app = Flask(__name__, instance_relative_config=True)
+
+    @app.context_processor
+    def inject_policies():
+        lang = session.get("lang", "el")
+        filepath = os.path.join("wsapp", "static", "lang", f"{lang}.json")
+
+        try:
+            with open(filepath, encoding="utf-8") as f:
+                translations = json.load(f)
+            return {"policies": translations.get("policies", [])}
+        except Exception:
+            return {"policies": []}
 
     # make current_year available to all templates
     @app.context_processor
