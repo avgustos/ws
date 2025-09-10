@@ -16,13 +16,16 @@
   },
 
 
-   "index": {
-    "title": "Welcome to My Website",
-    "paragraphs": [
-      "This is the home page.",
-      "More content here..."
-    ]
-  },
+  "index": {
+  "title": "Business Insurance Today",
+  "heading": "Protecting Small and Medium Businesses",
+  "paragraphs": [
+    "Business Insurance is one of the most essential tools for safeguarding companies of every size — and especially small and medium enterprises that face daily risks and challenges.",
+    "From changes in legislation that make certain coverages mandatory, to the increasing impact of climate change and extreme weather events, today’s businesses need to be prepared for threats that can disrupt operations, reduce profitability, or damage their reputation.",
+    "For SMEs, the right insurance is not a luxury — it is a necessity. Solutions such as property and equipment coverage, liability protection, credit and guarantee insurance, or coverage against business interruption and loss of profits, provide a vital safety net tailored to your needs.",
+    "With a well-designed insurance strategy, your business remains resilient and protected, allowing you to focus on growth and opportunity with peace of mind."
+  ]
+},
 
 
   "about_me": {

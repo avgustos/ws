@@ -1,17 +1,27 @@
-{% extends "/base.html" %}
-
+{% extends "base.html" %}
 
 {% block title %}
-    {{ content.title }}
+  {{ content.title }}
 {% endblock title %}
 
+{% block styles %}
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+{% endblock %}
 
 {% block content %}
+<section class="index-page">
+  <div class="container">
 
-    
+    <!-- Page Heading -->
+    <h2>{{ content.heading }}</h2>
 
-    {% for paragraph in content.paragraphs %}
+    <!-- Info Card -->
+    <div class="info-card">
+      {% for paragraph in content.paragraphs %}
         <p>{{ paragraph }}</p>
-    {% endfor %}
+      {% endfor %}
+    </div>
 
+  </div>
+</section>
 {% endblock content %}
