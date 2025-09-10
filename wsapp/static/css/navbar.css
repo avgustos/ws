@@ -93,11 +93,11 @@
 .navbar-toggler-custom:focus,
 .navbar-toggler-custom:active {
   outline: none !important;
-  background-color: rgba(231, 76, 60, 0.3) !important; /* subtle red */
+  /*background-color: rgba(231, 76, 60, 0.3) !important; /* subtle red */
   color: #fff !important;                                /* icon readable */
   border: none !important;                               /* no frame */
   border-radius: 6px;
-  box-shadow: 0 0 6px 1px rgba(231, 76, 60, 0.3) !important; /* soft subtle glow */
+  /*box-shadow: 0 0 6px 1px rgba(231, 76, 60, 0.3) !important; /* soft subtle glow */
   transition: all 0.2s ease-in-out;
 }
 
