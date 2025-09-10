@@ -19,21 +19,27 @@ html, body {
   padding: 0 1rem;
 }
 
-/* Jumbotron styling */
 .jumbotron-container {
-    width: 100%;
-    height: 200px;          /* fixed height */
-    overflow: hidden;       /* crop overflow */
+  width: 100%;
+  text-align: center;
+  background-color: #ffffff; /* ← white background */
+  padding: 10px 0;           /* optional: adds breathing room */
 }
 
 .jumbotron-img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;      /* scale & crop to fill container */
-    object-position: center;
-    display: block;
-    margin: 0 auto;       /* centers the image horizontally */
+  width: 100%;
+  height: auto;
+  max-width: 400px;   /* default for smaller screens */
+  display: inline-block;
 }
+
+/* On laptops and larger */
+@media (min-width: 1200px) {
+  .jumbotron-img {
+    max-width: 500px;
+  }
+}
+
 
 
 /* Headings (smaller than Bootstrap defaults) */
