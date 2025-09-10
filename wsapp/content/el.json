@@ -294,6 +294,78 @@
 },
 
 
+"useful_links": {
+  "title": "Χρήσιμοι Σύνδεσμοι",
+  "items": [
+    {
+      "icon": "fa-solid fa-user-tie",
+      "title": "Επαλήθευση Στοιχείων Ασφαλιστικού Διαμεσολαβητή",
+      "paragraphs": [
+        {
+          "parts": [
+            { "type": "text", "content": "Μπορείτε να επαληθεύσετε τα στοιχεία του ασφαλιστικού σας διαμεσολαβητή μέσω του Ενιαίου Σημείου Πληροφόρησης για Ενεργούς Ασφαλιστικούς Διαμεσολαβητές " },
+            { "type": "link", "text": "εδώ.", "url": "https://insuranceregistry.uhc.gr/Home/index" },
+            { "type": "text", "content": " Η αναζήτηση μπορεί να γίνει με Α.Φ.Μ., Γ.Ε.ΜΗ. ή με Επωνυμία / Επώνυμο. Τα δικά μου επαγγελματικά στοιχεία μπορείτε να τα βρείτε " },
+            { "type": "link", "text": "εδώ.", "url": "https://insuranceregistry.uhc.gr/agent/61587303000" }
+          ]
+        }
+      ]
+    },
+    {
+      "icon": "fa-solid fa-car",
+      "title": "Έλεγχος Εάν το Όχημά σας Είναι Ασφαλισμένο",
+      "paragraphs": [
+        {
+          "parts": [
+            { "type": "text", "content": "Μπορείτε να ελέγξετε εάν οποιοδήποτε όχημα είναι ασφαλισμένο, εισάγοντας μόνο τον αριθμό κυκλοφορίας, στην υπηρεσία του " },
+            { "type": "link", "text": "gov.gr.", "url": "https://dilosi.services.gov.gr/templates/VEHICLE-INSURANCE/create" }
+          ]
+        },
+        {
+          "parts": [
+            { "type": "text", "content": "Η υπηρεσία είναι διαθέσιμη μόνο στα ελληνικά. Εναλλακτικά, μπορείτε να ελέγξετε εάν κάποιο από τα οχήματά σας είναι ασφαλισμένο, καθώς και την ασφαλιστική εταιρεία και την περίοδο ασφάλισης, εισάγοντας τον αριθμό κυκλοφορίας και το Α.Φ.Μ., στον " },
+            { "type": "link", "text": "Ελληνικό Κέντρο Πληροφοριών.", "url": "https://www.hic.gr/hic/check_ins.aspx" }
+          ]
+        }
+      ]
+    }
+  ]
+},
+
+
+"contact": {
+  "title": "Επικοινωνία",
+  "office_name": "ALLIANZ",
+  "office_address": "Ηρώων Πολυτεχνείου 7-9, 18532, Πειραιάς",
+  "phoneLabel": "Τηλέφωνο",
+  "phones": [
+    { "label": "+30 210 7104910", "href": "tel:+302107104910" },
+    { "label": "+30 6932 266488", "href": "tel:+306932266488" }
+  ],
+  "emailLabel": "Ηλεκτρονικό Ταχυδρομείο",
+  "email": {
+    "label": "g.mavridis@yahoo.gr",
+    "href": "mailto:g.mavridis@yahoo.gr"
+  },
+  "availability": "Διαθέσιμος σε WhatsApp / Viber",
+  "form": {
+    "name": {
+      "label": "Όνομα",
+      "placeholder": "Το όνομά σας"
+    },
+    "email": {
+      "label": "Email",
+      "placeholder": "Το email σας"
+    },
+    "message": {
+      "label": "Μήνυμα",
+      "placeholder": "Το μήνυμά σας"
+    },
+    "button": "Αποστολή Μηνύματος"
+  }
+},
+
+
   "contact_messages": {
   "success": "Το μήνυμά σας στάλθηκε επιτυχώς!",
   "error": "Παρουσιάστηκε σφάλμα κατά την αποστολή. Παρακαλώ δοκιμάστε ξανά αργότερα."
