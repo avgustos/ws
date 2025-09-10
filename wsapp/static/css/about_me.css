@@ -32,3 +32,34 @@
   font-weight: 700;
   margin-top: 0;
 }
+
+/* Flexbox layout for photo + text */
+.about-me-card {
+  display: flex;
+  flex-direction: column; /* stack on small screens */
+  align-items: center;
+  gap: 1.5rem;
+}
+
+/* Profile photo */
+.profile-photo {
+  max-width: 200px;
+  height: auto;
+  border-radius: 12px;  /* rounded corners */
+  flex-shrink: 0;       /* prevent photo from shrinking */
+}
+
+/* Text next to the photo */
+.about-me-text {
+  flex: 1;
+  text-align: left;
+  width: 100%;
+}
+
+/* On larger screens, photo left + text right */
+@media (min-width: 768px) {
+  .about-me-card {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+}

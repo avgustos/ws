@@ -6,20 +6,26 @@
 
 {% block content %}
 <section class="about-me">
-  <div class="container">
+  <div class="container content-container">
 
     <!-- Page Title -->
     <h2>{{ content.title }}</h2>
 
-    <!-- Single Card for Paragraphs -->
-    <div class="info-card">
-      {% for paragraph in content.paragraphs %}
-        {% if loop.first %}
-          <p class="first-paragraph">{{ paragraph }}</p>
-        {% else %}
-          <p>{{ paragraph }}</p>
-        {% endif %}
-      {% endfor %}
+    <!-- Single Card with Photo + Text -->
+    <div class="info-card about-me-card">
+      <img src="{{ url_for('static', filename='images/my-photo.jpg') }}" 
+           alt="George Mavridis"
+           class="profile-photo">
+
+      <div class="about-me-text">
+        {% for paragraph in content.paragraphs %}
+          {% if loop.first %}
+            <p class="first-paragraph">{{ paragraph }}</p>
+          {% else %}
+            <p>{{ paragraph }}</p>
+          {% endif %}
+        {% endfor %}
+      </div>
     </div>
 
   </div>
