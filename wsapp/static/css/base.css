@@ -19,19 +19,22 @@ html, body {
   padding: 0 1rem;
 }
 
+/* Hero section styling */
 .jumbotron-container {
   width: 100%;
   text-align: center;
-  background-color: #ffffff; /* ← white background */
-  padding: 10px 0;           /* optional: adds breathing room */
+  background-color: #ffffff;
+  padding: 5px 0;
 }
 
 .jumbotron-img {
   width: 100%;
   height: auto;
-  max-width: 400px;   /* default for smaller screens */
+  max-width: 500px;
   display: inline-block;
+  aspect-ratio: 1400 / 350; /* keeps height consistent across loads */
 }
+
 
 /* On laptops and larger */
 @media (min-width: 1200px) {

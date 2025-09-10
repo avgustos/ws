@@ -1,11 +1,12 @@
 /* About Me Page Styles */
 .about-me {
   padding: 4rem 1rem;
-  background: #f9fafb;
+  background: #f9fafb; /* same background as corporate */
 }
 
+/* Centered container with limited width */
 .about-me .container {
-  max-width: 700px;
+  max-width: 900px;
   margin: 0 auto;
 }
 
@@ -18,7 +19,16 @@
   color: #111827;
 }
 
+/* Info card box (like corporate services) */
+.info-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
 /* First paragraph bold */
 .info-card p.first-paragraph {
   font-weight: 700;
+  margin-top: 0;
 }
